@@ -33,7 +33,7 @@ module.exports = function handler(req, res) {
   const start = (page - 1) * PAGE_SIZE;
   return res.status(200).json({
     items: filtered.slice(start, start + PAGE_SIZE).map(entry => entry.item),
-    total: filtered.length, page, hasMore: start + PAGE_SIZE < filtered.length,
+    total: filtered.length, totalItems: data.items.length, page, hasMore: start + PAGE_SIZE < filtered.length,
     chapters: data.chapters.map(chapter => chapter.id), types
   });
 };

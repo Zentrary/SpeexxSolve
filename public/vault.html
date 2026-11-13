@@ -1,6 +1,49 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="ค้นหาคำตอบ Speexx ตามระดับและบทเรียน"><title>คลังคำตอบ — Speexx Solve</title><link rel="icon" type="image/png" href="/assets/favicon.png"><link rel="stylesheet" href="/css/styles.css"></head><body>
-<header class="header"><div class="container nav"><a class="brand" href="/">Speexx <span>Solve</span></a><nav aria-label="เมนูหลัก"><a href="/">หน้าแรก</a><a aria-current="page" href="/vault.html">คลังคำตอบ</a></nav></div></header>
-<main class="container vault"><div class="vault-heading"><div><p class="eyebrow">คลังคำตอบ</p><h1>ค้นหาเฉลย</h1><p>ค้นหาจากโจทย์ ชื่อบทเรียน หรือคำตอบ</p></div><span class="free-label">ใช้งานฟรี</span></div>
-<section class="search-panel" aria-label="ค้นหาและกรองคำตอบ"><label class="search-label" for="search">คำค้นหา</label><div class="search-row"><span aria-hidden="true">⌕</span><input id="search" type="search" maxlength="200" placeholder="พิมพ์คำจากโจทย์หรือคำตอบ" autocomplete="off"></div><div class="filters"><label>ระดับ<select id="chapter"><option value="all">ทุกระดับ</option></select></label><label>ประเภท<select id="type"><option value="all">ทุกประเภท</option></select></label><button type="button" class="reset" id="reset">ล้างตัวกรอง</button></div></section>
-<div class="results-heading"><h2>ผลการค้นหา</h2><p id="status" role="status" aria-live="polite">กำลังโหลด…</p></div><div id="results" class="results"></div><div class="more"><button type="button" class="button secondary" id="more" hidden>แสดงเพิ่มเติม</button></div></main>
-<footer class="footer"><div class="container footer-inner"><span>Speexx Solve · ใช้งานฟรี</span><a href="/#credit">เครดิตผู้จัดทำ</a></div></footer><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="/js/exercises.js"></script><script src="/js/vault.js"></script></body></html>
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="ค้นหาคำตอบ Speexx ตามระดับและบทเรียน">
+  <meta name="theme-color" content="#111112">
+  <title>คลังคำตอบ — Speexx Solve</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/vault.css">
+</head>
+<body class="vault-body">
+  <header class="header vault-header">
+    <div class="vault-container nav">
+      <a class="vault-brand" href="/" aria-label="Speexx Solve หน้าแรก"><span class="brand-icon"><img src="/assets/favicon.png" alt=""></span><span>Speexx <em>Solve</em><small>ANSWER LIBRARY</small></span></a>
+      <nav aria-label="เมนูหลัก"><a href="/">หน้าแรก</a><a aria-current="page" href="/vault.html">คลังคำตอบ</a></nav>
+    </div>
+  </header>
+  <main class="vault-container vault-workspace">
+    <div class="breadcrumb"><a href="/">หน้าแรก</a><span aria-hidden="true">/</span><span>คลังคำตอบ</span></div>
+    <section class="workspace-intro" aria-labelledby="vault-title">
+      <div class="intro-copy"><p class="workspace-kicker"><span></span> YOUR STUDY COMPANION</p><h1 id="vault-title">คลังคำตอบ<span>.</span></h1><p>ค้นหาโจทย์และเฉลยที่ต้องการ<br class="intro-break"> พร้อมทบทวนไปทีละบทเรียน</p></div>
+      <div class="library-facts" aria-label="ข้อมูลคลังคำตอบ"><div><strong id="total-answers">—</strong><span>หน้าคำตอบ</span></div><div><strong id="total-levels">—</strong><span>ระดับบทเรียน</span></div><div><strong>ฟรี</strong><span>ทุกการใช้งาน</span></div></div>
+      <div class="intro-index" aria-hidden="true">SS <span>/</span> 01</div>
+    </section>
+    <div class="workspace-grid">
+      <section class="search-panel" aria-label="ค้นหาคำตอบ"><div class="search-topline"><label for="search">ค้นหาในคลัง</label><span>SEARCH THE LIBRARY</span></div><div class="search-inner"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.7" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><input id="search" type="search" maxlength="200" placeholder="พิมพ์คำจากโจทย์หรือคำตอบ..." autocomplete="off"><button type="button" id="clear-search" class="clear-search" aria-label="ล้างคำค้นหา" hidden>×</button><kbd aria-hidden="true">Ctrl K</kbd></div><p class="search-hint">ค้นหาได้ทั้งชื่อบทเรียน บางส่วนของโจทย์ หรือคำตอบ</p></section>
+      <aside class="filter-column" aria-label="ตัวกรองการค้นหา">
+        <div class="filter-card">
+          <div class="filter-heading"><div><span class="section-overline">BROWSE BY</span><h2>เลือกบทเรียน</h2></div><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 12h10M10 17h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="filter-section"><div class="filter-label-row"><span>ระดับภาษา</span><span class="filter-caption">LEVEL</span></div><div class="level-list" id="levels" role="group" aria-label="เลือกระดับภาษา"><button class="level-button active" type="button" data-level="all" aria-pressed="true">ทั้งหมด</button></div></div>
+          <div class="filter-section"><label class="filter-label-row" for="type"><span>ประเภทแบบฝึกหัด</span><span class="filter-caption">TYPE</span></label><div class="select-wrap"><select id="type"><option value="all">ทุกประเภท</option></select></div></div>
+          <button type="button" class="reset-filter" id="reset"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4.5 12a7.5 7.5 0 1 0 2.1-5.2M4.5 4.8v4.4h4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>ล้างการค้นหาและตัวกรอง</button>
+        </div>
+        <div class="guide-card"><div class="guide-icon" aria-hidden="true">✳</div><p class="section-overline">A LITTLE TIP</p><h3>หาไม่เจอใช่ไหม?</h3><p>ลองใช้คำสั้น ๆ จากโจทย์ หรือเลือกระดับให้ตรงกับบทเรียน</p><a href="/#exercise-types">ดูประเภทแบบฝึกหัด <span aria-hidden="true">↗</span></a></div>
+      </aside>
+      <div class="content-column">
+        <div class="results-heading"><div><p class="section-overline">YOUR RESULTS</p><h2>ผลการค้นหา <span class="results-dot">.</span></h2></div><div class="results-meta"><span id="filter-summary">ทุกระดับ · ทุกประเภท</span><p id="status" role="status" aria-live="polite">กำลังโหลด…</p></div></div>
+        <div id="results" class="results" aria-label="รายการคำตอบ"></div>
+        <div class="more"><button type="button" class="button secondary" id="more" hidden>แสดงเพิ่มเติม <span aria-hidden="true">↓</span></button></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><div class="vault-container footer-inner"><span>Speexx Solve · ใช้งานฟรี</span><span>เว็บไซต์นี้ไม่ได้เป็นเว็บไซต์ทางการของ Speexx</span><a href="/#credit">เครดิตผู้จัดทำ ↗</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/js/exercises.js"></script><script src="/js/vault.js"></script>
+</body>
+</html>
