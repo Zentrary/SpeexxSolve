@@ -123,83 +123,18 @@
       <p class="answer-note">จับคู่คำตอบตามลำดับจากข้อมูลต้นฉบับ</p>`;
   }
 
-  function renderTrueFalse(item, matcher) {
-    const values = flatten(item.answers);
-    if (!values.length || !values.every((v) => v === "0" || v === "1")) return null;
-    if (!/true\s*\n\s*false/i.test(item.body)) return null;
-
-    const re = /true\s*\n\s*false/gi;
-    const lines = [];
-    let last = 0;
-    let m;
-    while ((m = re.exec(item.body))) {
-      lines.push(item.body.slice(last, m.index));
-      last = m.index + m[0].length;
+  function renderChoices(item) {
+    const parsed = Exercises.selectionGroups(item);
+    if (parsed) {
+      return `<div class="choice-groups">${parsed.map((group, index) => `<section class="choice-group"><div class="choice-question"><span>ข้อ ${index + 1}</span><strong>${esc(group.question)}</strong></div><ol class="choice-options">${group.options.map((option, optionIndex) => {
+        const selected = group.selected.includes(optionIndex);
+        return `<li class="choice-option${selected ? ' selected' : ''}"><span class="choice-indicator" aria-hidden="true">${selected ? '●' : '○'}</span><span class="choice-option-text">${esc(option)}</span>${selected ? '<span class="choice-selected">ให้เลือกข้อนี้</span>' : ''}</li>`;
+      }).join('')}</ol></section>`).join('')}</div>`;
     }
-    if (lines.length !== values.length) return null;
-
-    const rows = lines.map((statement, i) => {
-      const text = statement.replace(/^\s+|\s+$/g, "");
-      const value = values[i] === "0" ? "True" : "False";
-      return `<li><span class="sentence">${highlight(text, matcher)}</span> <span class="chip ans">${value}</span></li>`;
-    });
-
-    return `<ol class="answer-list">${rows.join("")}</ol>
-      <p class="answer-note">0 = True · 1 = False (เรียงตามลำดับตัวเลือก True/False ในโจทย์)</p>`;
-  }
-
-  function renderChoices(item, matcher) {
-    const groups = Array.isArray(item.answers) && Array.isArray(item.answers[0]) ? item.answers : null;
-    const flat = flatten(item.answers);
-    const tf = renderTrueFalse(item, matcher);
-
-    if (tf) return `<div class="answer-box">${tf}</div>`;
-
-    const optionLines = item.body
-      .split("\n")
-      .map((s) => s.replace(/\t+$/g, "").trim())
-      .filter(Boolean);
-    const showOptions = optionLines.length > 0 && optionLines.length <= 24;
-    const compact =
-      optionLines.length > 7 && optionLines.every((line) => line.length <= 52);
-    const flatSet = new Set(flat.map((v) => Number(v)).filter((n) => Number.isFinite(n)));
-    const markOptions = groups && groups.length === 1 && showOptions;
-
-    let html = "";
-    if (showOptions) {
-      html += `<ol class="option-list${compact ? " compact" : ""}">${optionLines
-        .map(
-          (line, i) =>
-            `<li class="option${markOptions && flatSet.has(i) ? " is-answer" : ""}">
-               <span class="idx">${i}</span><span>${highlight(line, matcher)}</span>
-             </li>`
-        )
-        .join("")}</ol>`;
-    }
-
-    if (groups) {
-      html += groups
-        .map((group, gi) => {
-          const picks = group.map(String);
-          const label = groups.length > 1 ? `ชุดที่ ${gi + 1}` : "ตัวเลือกที่เลือก";
-          return `<div class="group-row"><span class="answer-key-label">${label}</span>${picks
-            .map((p) => `<span class="chip ans"><span class="num">${esc(p)}</span></span>`)
-            .join("")}</div>`;
-        })
-        .join("");
-    } else {
-      html += `<div class="answer-key"><span class="answer-key-label">คำตอบ</span>${chipList(flat, {
-        ans: true,
-        numbered: true,
-      })}</div>`;
-    }
-
-    return `<div class="answer-box">${html}</div>
-      <p class="answer-note">ตัวเลขคือดัชนีตัวเลือก (เริ่มที่ 0) เรียงตามตัวเลือกในโจทย์${
-        !groups && flat.length && flat.every((v) => v === "0" || v === "1") && /true\s*\n\s*false/i.test(item.body)
-          ? " · 0 = True, 1 = False"
-          : ""
-      }${flat.length ? "" : " · ข้อนี้ไม่มีข้อมูลเฉลยในไฟล์"}</p>`;
+    const raw = Array.isArray(item.answers) ? item.answers : [];
+    const groups = raw.map(value => Array.isArray(value) ? value : [value]);
+    if (!groups.length) return '<p class="answer-note">ไม่มีข้อมูลเฉลยในไฟล์ต้นฉบับ</p>';
+    return `<p class="answer-note choice-warning">ข้อมูลโจทย์ไม่ได้ระบุตำแหน่งตัวเลือกชัดเจน กรุณาเทียบดัชนีที่เริ่มจาก 0 กับตัวเลือกในแบบฝึกหัด</p><ol class="choice-fallback">${groups.map(group => `<li>${group.map(value => Number.isInteger(value) && value >= 0 ? `ตัวเลือกที่ ${value + 1} (ดัชนี ${value})` : esc(value)).join(' · ')}</li>`).join('')}</ol>`;
   }
 
   function renderScrambledTable(item, matcher) {
@@ -321,7 +256,7 @@
     if (type === "scrambled-sentence") {
       const sentences = (item.answers || []).map((group) => joinTokens(group));
       return `<div class="answer-box">${answerList(sentences, matcher)}</div>
-        <p class="answer-note">ลำดับคำ/ประโยคตามข้อมูลที่บันทึกไว้</p>`;
+        <p class="answer-note">คำในข้อมูลอาจยังไม่เรียงเป็นประโยค ตรวจสอบลำดับกับแบบฝึกหัด</p>`;
     }
 
     if (type === "scrambled-table") {
@@ -347,35 +282,23 @@
     return `<div class="answer-box">${autoAnswerBlock(flat, matcher)}</div>`;
   }
 
-  // Return copyable values in the same order as the source data.
+  // Only actual text-entry tasks should expose clipboard controls.
   function copyValues(item) {
-    const type = item.answerType;
-    if (type === 'intro' || type === 'picture-choice') return [];
-    if (type === 'mark-text') {
-      const words = item.body.split(/\s+/).filter(Boolean);
-      const positions = item.answers?.group_positions || item.answers?.all_positions || [];
-      return positions.map(i => words[i]).filter(Boolean);
-    }
-    if (type === 'scrambled-sentence') return (item.answers || []).map(joinTokens).filter(Boolean);
-    if (type === 'scrambled-table') return (item.answers || []).slice().sort((a,b) => (a.idx ?? 0) - (b.idx ?? 0)).map(a => a.text).filter(Boolean);
-    const values = flatten(item.answers);
-    if (type === 'single-choice' || type === 'multiple-choice') {
-      if (values.length && values.every(v => v === '0' || v === '1') && /true\s*\n\s*false/i.test(item.body)) return values.map(v => v === '0' ? 'True' : 'False');
-      const lines = item.body.split('\n').map(v => v.trim()).filter(Boolean);
-      const groups = item.answers;
-      if (Array.isArray(groups) && groups.length === 1 && Array.isArray(groups[0]) && lines.length <= 24 && values.every(v => /^\d+$/.test(v) && Number(v) < lines.length)) return values.map(v => lines[Number(v)]);
-    }
-    return values;
+    return Exercises.describe(item).copyable ? flatten(item.answers).filter(value => value.trim()) : [];
   }
   const results = $('#results'), status = $('#status'), more = $('#more');
-  const search = $('#search'), chapter = $('#chapter'), type = $('#type'), images = $('#images');
+  const search = $('#search'), chapter = $('#chapter'), type = $('#type');
   let page = 1, currentItems = [], requestNumber = 0, controller, timer, filtersReady = false;
   function card(item) {
+    const details = Exercises.describe(item);
     const values = copyValues(item);
-    const indexNote = (item.answerType === 'single-choice' || item.answerType === 'multiple-choice') && values.some(value => /^\d+$/.test(value)) ? '<p class="answer-note">ตัวเลขที่แสดงเป็นดัชนีตัวเลือกจากข้อมูลต้นฉบับ ตรวจสอบตัวเลือกก่อนนำไปใช้</p>' : '';
-    const copyArea = values.length ? `<div class="copy-area"><div class="copy-area-head"><strong>คัดลอกคำตอบ</strong><button class="copy-all" type="button" data-copy-all="${esc(item.id)}">คัดลอกทั้งหมด</button></div>${indexNote}<div class="copy-list">${values.map((value, index) => `<div class="copy-row"><span class="copy-number">${index + 1}</span><span class="copy-value">${esc(value)}</span><button class="copy-one" type="button" data-copy-id="${esc(item.id)}" data-copy-index="${index}" aria-label="คัดลอกคำตอบข้อ ${index + 1}">คัดลอก</button></div>`).join('')}</div></div>` : '';
+    const copyArea = values.length ? `<div class="copy-area"><div class="copy-area-head"><strong>คัดลอกคำตอบสำหรับพิมพ์</strong><button class="copy-all" type="button" data-copy-all="${esc(item.id)}">คัดลอกทั้งหมด</button></div><div class="copy-list">${values.map((value, index) => `<div class="copy-row"><span class="copy-number">${index + 1}</span><span class="copy-value">${esc(value)}</span><button class="copy-one" type="button" data-copy-id="${esc(item.id)}" data-copy-index="${index}" aria-label="คัดลอกคำตอบข้อ ${index + 1}">คัดลอก</button></div>`).join('')}</div></div>` : '';
     const prompt = item.prompt && item.prompt !== item.title && item.prompt !== item.body ? `<p class="card-prompt">${esc(item.prompt)}</p>` : '';
-    return `<article class="card"><div class="badges"><span>${esc(item.chapter)}</span><span>${esc(item.typeLabel)}</span><span>หน้า ${esc(item.page ?? '—')}</span></div>${item.exercise && item.exercise !== item.title ? `<p class="card-exercise">${esc(item.exercise)}</p>` : ''}<h3>${esc(item.title || item.exercise || 'ไม่มีชื่อข้อ')}</h3>${prompt}${item.body ? `<div class="question-body">${esc(item.body)}</div>` : ''}<div class="answer-panel"><div class="answer-head">เฉลย</div>${renderAnswer(item, null)}</div>${copyArea}</article>`;
+    const isChoice = ['single-choice', 'multiple-choice'].includes(details.kind);
+    const parsed = isChoice && Exercises.selectionGroups(item);
+    const question = !parsed && item.body ? `<div class="question-block"><div class="block-label">โจทย์</div><div class="question-body">${esc(item.body)}</div></div>` : '';
+    const answer = isChoice ? renderChoices(item) : renderAnswer({ ...item, answerType: details.kind }, null);
+    return `<article class="card"><div class="badges"><span>${esc(item.chapter)}</span><span>${esc(details.label)}</span><span>หน้า ${esc(item.page ?? '—')}</span></div>${item.exercise && item.exercise !== item.title ? `<p class="card-exercise">${esc(item.exercise)}</p>` : ''}<h3>${esc(item.title || item.exercise || 'ไม่มีชื่อข้อ')}</h3>${prompt}<div class="how-to"><strong>วิธีทำ</strong><span>${esc(details.instruction)}</span></div>${question}<div class="answer-panel"><div class="answer-head">${parsed ? 'โจทย์และเฉลย' : 'เฉลย'}</div>${answer}</div>${copyArea}</article>`;
   }
   async function load(append = false) {
     if (controller) controller.abort();
@@ -383,7 +306,7 @@
     const number = ++requestNumber;
     if (!append) { page = 1; currentItems = []; results.innerHTML = ''; }
     more.hidden = true; status.textContent = 'กำลังค้นหา…';
-    const params = new URLSearchParams({q: search.value.trim(), chapter: chapter.value, type: type.value, images: images.checked ? '1' : '0', page: String(page)});
+    const params = new URLSearchParams({q: search.value.trim(), chapter: chapter.value, type: type.value, page: String(page)});
     try {
       const response = await fetch('/api/search?' + params, {signal: controller.signal});
       if (!response.ok) throw new Error('Request failed');
@@ -409,8 +332,8 @@
     }
   }
   search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => load(), 250); });
-  for (const filter of [chapter, type, images]) filter.addEventListener('change', () => { clearTimeout(timer); load(); });
-  $('#reset').addEventListener('click', () => { clearTimeout(timer); search.value = ''; chapter.value = 'all'; type.value = 'all'; images.checked = false; load(); });
+  for (const filter of [chapter, type]) filter.addEventListener('change', () => { clearTimeout(timer); load(); });
+  $('#reset').addEventListener('click', () => { clearTimeout(timer); search.value = ''; chapter.value = 'all'; type.value = 'all'; load(); });
   more.addEventListener('click', () => { if (!more.dataset.retry) page++; delete more.dataset.retry; more.textContent = 'แสดงเพิ่มเติม'; load(page > 1); });
   const toast = $('#toast'); let toastTimer;
   function notify(message) { toast.textContent = message; toast.classList.add('visible'); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('visible'), 2500); }
