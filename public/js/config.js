@@ -1,5 +1,8 @@
-// แก้ไขข้อมูลผู้จัดทำได้ที่นี่
+// ใส่ลิงก์ Facebook และ Instagram จริงของผู้จัดทำได้ที่นี่
 window.SITE_CONFIG = {
-  owner: { name: 'Zentrary', tagline: 'จัดทำคลังคำตอบสำหรับทบทวนและฝึกภาษาอังกฤษ', photo: '/assets/profile.jpg' },
-  socials: [{ label: 'GitHub', url: 'https://github.com/Zentrary' }]
+  owner: { name: 'Chier · เชียร์', tagline: 'จัดทำคลังคำตอบสำหรับทบทวนและฝึกภาษาอังกฤษ', photo: '/assets/profile.jpg' },
+  socials: [
+    { label: 'Facebook', url: '' },
+    { label: 'Instagram', url: '' }
+  ]
 };
