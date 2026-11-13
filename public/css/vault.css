@@ -124,3 +124,7 @@
 .letter-options { display:flex; flex-wrap:wrap; gap:7px; margin-top:8px; }
 .letter-options span { display:grid; place-items:center; min-width:36px; min-height:36px; padding:4px 9px; background:#292726; border:1px solid #44403b; border-radius:5px; font-size:14px; color:#efebe6; }
 @media(max-width:700px) { .simple-answer-list li { gap:9px; padding:9px; }.simple-answer-text { font-size:13px; }.selected-answer { padding:9px 10px; } }
+/* Keep multiple selections in a readable vertical list. */
+.selected-list { list-style:none; padding:0; margin:0; display:grid; gap:5px; min-width:0; flex:1; }
+.selected-list li { color:#fff2e8; font-size:14px; font-weight:600; line-height:1.65; overflow-wrap:anywhere; }
+.fallback-pick { display:block; }
