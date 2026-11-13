@@ -26,3 +26,13 @@
 ## Vercel
 
 เชื่อม repository กับ Vercel และ deploy จาก branch ที่ต้องการ ตัวตั้งค่า `vercel.json` จะให้บริการเฉพาะไฟล์ใน `public/` และ API ใน `api/` ทดสอบว่า `/server/data.json`, `/solve%20data/answers_A1.json` และ `/data.js` ตอบ 404 หลัง deploy และตรวจสอบว่าการค้นหาและคัดลอกบน HTTPS ทำงานจริง อย่าตั้ง output directory เป็น repository root หรือเผยแพร่ `server/` และ `solve data/` เป็น static files
+
+### ลดการดึงข้อมูลอัตโนมัติ
+
+API ส่งเฉพาะฟิลด์ที่หน้าเว็บจำเป็นต้องใช้และไม่ส่งข้อมูลออกเสียง แต่ยังต้องส่งคำตอบที่ผู้ใช้ดูได้ การลดฟิลด์หรือการแสดงทีละ 20 รายการ **ไม่ใช่การป้องกันการเก็บเฉลย** และยังตรวจดู Response ใน DevTools ได้ตามปกติ
+
+มีตัวจำกัด 30 คำขอต่อนาทีต่อ IP ภายในแต่ละ process และตอบ HTTP 429 พร้อม `Retry-After` แต่บน Vercel process อาจมีหลาย instance หรือถูกรีสตาร์ต จึงเป็นเพียงตัวช่วย best-effort **ไม่ใช่ rate limit ที่ใช้ร่วมกันหรือป้องกัน scraping ได้จริง** ผู้ใช้ที่แชร์ IP เดียวกันอาจถูกจำกัดร่วมกัน
+
+ควรตั้ง [Vercel WAF rate limiting](https://vercel.com/docs/vercel-firewall/vercel-waf/rate-limiting) ด้วยตนเองสำหรับ production: เปิด Project → Firewall → Configure → New Rule; ตั้ง Request Path เป็น `/api/search`, action เป็น Rate Limit, key เป็น IP, fixed window 60 วินาที และเริ่มต้นที่ 30 requests พร้อม HTTP 429; ตรวจสอบ traffic และปรับตามการใช้งานจริงก่อน Publish กฎอาจนับรวมผู้ใช้หลัง IP เดียวกัน ตรวจสอบค่าใช้จ่าย ข้อจำกัดแพ็กเกจ และผลกระทบก่อนเปิดใช้งาน กฎนี้ไม่ได้ถูกเปิดอัตโนมัติจาก repository หรือ connector และต้องทดสอบหลังเปิดใช้งาน
+
+สำคัญที่สุด: repository นี้เป็น public และทั้ง `solve data/` และ `server/data.json` รวมถึง Git history สามารถดาวน์โหลดได้โดยตรงจาก GitHub ตั้ง repository เป็น private หลังพิจารณาผลกระทบต่อ deployment และผู้ร่วมงาน และตรวจสอบ deployment เก่าหรือสำเนาที่เผยแพร่แล้ว การเปลี่ยนเป็น private ไม่สามารถเรียกคืนสำเนาที่ถูกดาวน์โหลดไปแล้วได้

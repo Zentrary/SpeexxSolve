@@ -62,7 +62,7 @@
         const selected = group.selected.map(optionIndex => group.options[optionIndex]);
         const heading = group.question ? `<div class="choice-question"><span>ข้อ ${index + 1}</span><strong>${esc(group.question)}</strong></div>` : (parsed.length > 1 ? `<div class="choice-question"><span>ข้อ ${index + 1}</span></div>` : '');
         const selectedList = selected.length ? `<ul class="selected-list">${selected.map(value => `<li>${esc(value)}</li>`).join('')}</ul>` : '<strong>ไม่ได้เลือกตัวเลือก</strong>';
-        return `<section class="choice-group">${heading}<div class="selected-answer"><span>คำตอบ</span>${selectedList}</div><details class="choice-details"><summary>ดูตัวเลือกทั้งหมด</summary><ol class="choice-options">${group.options.map((option, optionIndex) => `<li class="choice-option${group.selected.includes(optionIndex) ? ' selected' : ''}"><span class="choice-indicator" aria-hidden="true">${group.selected.includes(optionIndex) ? '●' : '○'}</span><span class="choice-option-text">${esc(option)}</span>${group.selected.includes(optionIndex) ? '<span class="choice-selected">คำตอบ</span>' : ''}</li>`).join('')}</ol></details></section>`;
+        return `<section class="choice-group">${heading}<div class="selected-answer"><span>คำตอบ</span>${selectedList}</div></section>`;
       }).join('')}</div>`;
     }
     const raw = Array.isArray(item.answers) ? item.answers : [];
@@ -136,7 +136,7 @@
       .map((img) => {
         const label = options[img.itemIdx] || `ภาพที่ ${img.itemIdx + 1}`;
         return `<a class="img-card" href="${esc(img.src)}" target="_blank" rel="noopener" title="เปิดรูปขนาดเต็ม">
-          <img src="${esc(img.src)}" data-remote="${esc(img.remoteSrc || "")}" alt="${esc(label)}" loading="lazy" decoding="async">
+          <img src="${esc(img.src)}" alt="${esc(label)}" loading="lazy" decoding="async">
           <figcaption><b>${img.itemIdx}</b><span>${esc(label)}</span></figcaption>
         </a>`;
       })
@@ -248,6 +248,7 @@
     const params = new URLSearchParams({q: search.value.trim(), chapter: selectedChapter, type: type.value, page: String(page)});
     try {
       const response = await fetch('/api/search?' + params, {signal: controller.signal});
+      if (response.status === 429) throw new Error('rate-limited');
       if (!response.ok) throw new Error('Request failed');
       const data = await response.json();
       if (number !== requestNumber) return;
@@ -268,7 +269,7 @@
       more.hidden = !data.hasMore;
     } catch (error) {
       if (error.name === 'AbortError' || number !== requestNumber) return;
-      status.textContent = 'โหลดข้อมูลไม่สำเร็จ กรุณาลองอีกครั้ง';
+      status.textContent = error.message === 'rate-limited' ? 'ค้นหาบ่อยเกินไป กรุณารอสักครู่แล้วลองอีกครั้ง' : 'โหลดข้อมูลไม่สำเร็จ กรุณาลองอีกครั้ง';
       more.textContent = 'ลองอีกครั้ง'; more.hidden = false;
       // Retry the same page on failure, rather than skipping it.
       more.dataset.retry = '1';
