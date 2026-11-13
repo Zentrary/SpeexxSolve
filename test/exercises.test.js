@@ -35,3 +35,15 @@ test('multiple choice preserves all selected options', () => {
   assert.deepEqual(groups[0].selected, [0, 1]);
   assert.deepEqual(groups[0].selected.map(i => groups[0].options[i]), ['MRI machines.', 'Compound microscopes.']);
 });
+
+test('explicit tab-separated choice columns map to the correct statement', () => {
+  const groups = exercises.selectionGroups(find('A1-5-3'));
+  assert.equal(groups.length, 6);
+  assert.equal(groups[0].question, 'Hello?');
+  assert.equal(groups[0].options[groups[0].selected[0]], 'Personal');
+  assert.equal(groups[1].options[groups[1].selected[0]], 'Business');
+});
+test('empty answer positions are preserved instead of renumbering later answers', () => {
+  assert.deepEqual(exercises.orderedValues({answers: ['first', '', 'third']}), ['first', '', 'third']);
+  assert.deepEqual(exercises.orderedValues({answers: []}), []);
+});
