@@ -60,13 +60,15 @@
     if (parsed) {
       return `<div class="choice-groups">${parsed.map((group, index) => {
         const selected = group.selected.map(optionIndex => group.options[optionIndex]);
-        return `<section class="choice-group"><div class="choice-question"><span>ข้อ ${index + 1}</span><strong>${esc(group.question)}</strong></div><div class="selected-answer"><span>คำตอบ</span><strong>${selected.map(esc).join(' · ')}</strong></div><details class="choice-details"><summary>ดูตัวเลือกทั้งหมด</summary><ol class="choice-options">${group.options.map((option, optionIndex) => `<li class="choice-option${group.selected.includes(optionIndex) ? ' selected' : ''}"><span class="choice-indicator" aria-hidden="true">${group.selected.includes(optionIndex) ? '●' : '○'}</span><span class="choice-option-text">${esc(option)}</span>${group.selected.includes(optionIndex) ? '<span class="choice-selected">คำตอบ</span>' : ''}</li>`).join('')}</ol></details></section>`;
+        const heading = group.question ? `<div class="choice-question"><span>ข้อ ${index + 1}</span><strong>${esc(group.question)}</strong></div>` : (parsed.length > 1 ? `<div class="choice-question"><span>ข้อ ${index + 1}</span></div>` : '');
+        const selectedList = selected.length ? `<ul class="selected-list">${selected.map(value => `<li>${esc(value)}</li>`).join('')}</ul>` : '<strong>ไม่ได้เลือกตัวเลือก</strong>';
+        return `<section class="choice-group">${heading}<div class="selected-answer"><span>คำตอบ</span>${selectedList}</div><details class="choice-details"><summary>ดูตัวเลือกทั้งหมด</summary><ol class="choice-options">${group.options.map((option, optionIndex) => `<li class="choice-option${group.selected.includes(optionIndex) ? ' selected' : ''}"><span class="choice-indicator" aria-hidden="true">${group.selected.includes(optionIndex) ? '●' : '○'}</span><span class="choice-option-text">${esc(option)}</span>${group.selected.includes(optionIndex) ? '<span class="choice-selected">คำตอบ</span>' : ''}</li>`).join('')}</ol></details></section>`;
       }).join('')}</div>`;
     }
     const raw = Array.isArray(item.answers) ? item.answers : [];
     const groups = raw.map(value => Array.isArray(value) ? value : [value]);
     if (!groups.length) return '<p class="answer-note">ข้อนี้ยังไม่มีคำตอบในข้อมูล</p>';
-    return `<p class="choice-warning">เลือกตัวเลือกตามลำดับด้านล่างในแบบฝึกหัด ตัวอย่าง: ตัวเลือกที่ 1 คือข้อแรก</p><ol class="simple-answer-list">${groups.map((group, index) => `<li><span class="simple-answer-number">${index + 1}</span><span class="simple-answer-text">${group.length ? group.map(value => Number.isInteger(value) && value >= 0 ? `เลือกตัวเลือกที่ ${value + 1}` : esc(value)).join(' · ') : 'ไม่มีคำตอบในข้อมูล'}</span></li>`).join('')}</ol><p class="answer-note">ข้อมูลต้นฉบับไม่ระบุว่าตัวเลือกใดอยู่คู่กับแต่ละข้อ จึงแสดงเป็นลำดับตัวเลือกแทน</p>`;
+    return `<p class="choice-warning">เลือกตัวเลือกตามลำดับด้านล่างในแบบฝึกหัด ตัวอย่าง: ตัวเลือกที่ 1 คือข้อแรก</p><ol class="simple-answer-list">${groups.map((group, index) => `<li><span class="simple-answer-number">${index + 1}</span><span class="simple-answer-text">${group.length ? group.map(value => `<span class="fallback-pick">${Number.isInteger(value) && value >= 0 ? `เลือกตัวเลือกที่ ${value + 1}` : esc(value)}</span>`).join('') : 'ไม่มีคำตอบในข้อมูล'}</span></li>`).join('')}</ol><p class="answer-note">ข้อมูลต้นฉบับไม่ระบุว่าตัวเลือกใดอยู่คู่กับแต่ละข้อ จึงแสดงเป็นลำดับตัวเลือกแทน</p>`;
   }
 
   function renderOrderedAnswers(item) {

@@ -25,7 +25,9 @@ test('true or false questions are mapped without losing the statements', () => {
   assert.equal(groups[0].options[groups[0].selected[0]], 'False');
 });
 test('ambiguous or invalid choices are not guessed', () => {
-  assert.equal(exercises.selectionGroups(find('A1-0-0')), null);
+  assert.equal(exercises.selectionGroups({...find('A1-0-0'), id:'other'}), null);
+  assert.equal(exercises.selectionGroups({...find('A1-0-0'), body:'A\nK\nE\nI'}), null);
+  assert.equal(exercises.selectionGroups(find('B1.2-7-1')), null);
   assert.equal(exercises.selectionGroups({answerType:'single-choice', body:'Which one?A\nB', answers:[9]}), null);
   assert.equal(exercises.selectionGroups({answerType:'single-choice', body:'intro\nWhich one?A\nB', answers:[1]}), null);
 });
@@ -46,4 +48,33 @@ test('explicit tab-separated choice columns map to the correct statement', () =>
 test('empty answer positions are preserved instead of renumbering later answers', () => {
   assert.deepEqual(exercises.orderedValues({answers: ['first', '', 'third']}), ['first', '', 'third']);
   assert.deepEqual(exercises.orderedValues({answers: []}), []);
+});
+
+test('the photographed letter exercise uses the confirmed pairs in row order', () => {
+  const groups = exercises.selectionGroups(find('A1-0-0'));
+  assert.deepEqual(groups.map(g => g.options), [['A','K'], ['E','I'], ['G','J'], ['T','B'], ['I','Y'], ['W','V']]);
+  assert.deepEqual(groups.map(g => g.options[g.selected[0]]), ['A','I','G','T','Y','V']);
+});
+test('clearly delimited checkbox lists show the selected text vertically', () => {
+  const group = exercises.selectionGroups(find('A2-1-1'))[0];
+  assert.deepEqual(group.selected.map(n => group.options[n]), [
+    'Jonathan is reading a Stephen King novel.',
+    'Anjali wants to learn more about American life.',
+    "Anjali hasn't used her e-reader yet."
+  ]);
+  const health = exercises.selectionGroups(find('B1.1-6-0'))[0];
+  assert.deepEqual(health.selected.map(n => health.options[n]), ['eating fatty foods', 'drinking lots of alcohol', 'stress', 'smoking']);
+  assert.equal(exercises.selectionGroups({...find('B1.1-6-0'), id:'different'}), null);
+});
+test('multiple-choice true/false records keep statements and choices together', () => {
+  const groups = exercises.selectionGroups(find('A2-26-2'));
+  assert.equal(groups.length, 5);
+  assert.equal(groups[0].question, 'Alicia is finished with her training.');
+  assert.equal(groups[0].options[groups[0].selected[0]], 'False');
+});
+test('truncated or mixed checkbox bodies do not produce invented choices', () => {
+  const sample = find('A2-1-1');
+  assert.equal(exercises.selectionGroups({...sample, body:'First sentence.\nCut off', answers:[[0,1]]}), null);
+  assert.equal(exercises.selectionGroups({...sample, body:'First sentence.\nSecond sentence.', answers:[[2]]}), null);
+  assert.equal(exercises.selectionGroups({...sample, body:'What is this? First answer.\nSecond answer.', answers:[[0]]}), null);
 });
