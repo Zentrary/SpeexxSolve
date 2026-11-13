@@ -2,7 +2,7 @@
 window.SITE_CONFIG = {
   owner: { name: 'Chier · เชียร์', tagline: 'จัดทำคลังคำตอบสำหรับทบทวนและฝึกภาษาอังกฤษ', photo: '/assets/profile.jpg' },
   socials: [
-    { label: 'Facebook', url: '' },
-    { label: 'Instagram', url: '' }
+    { label: 'Facebook', url: 'https://www.facebook.com/Timmy.org/' },
+    { label: 'Instagram · @chier.pl', url: 'https://www.instagram.com/chier.pl/' }
   ]
 };
