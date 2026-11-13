@@ -128,3 +128,10 @@
 .selected-list { list-style:none; padding:0; margin:0; display:grid; gap:5px; min-width:0; flex:1; }
 .selected-list li { color:#fff2e8; font-size:14px; font-weight:600; line-height:1.65; overflow-wrap:anywhere; }
 .fallback-pick { display:block; }
+/* Small visual refinements shared with the home page. */
+.vault-body .card { transition:border-color .2s ease, background-color .2s ease; }
+.vault-body .card:hover { border-color:#655245; }
+.workspace-kicker span { box-shadow:0 0 12px #e69a6c; }
+.search-inner { transition:border-color .2s ease, box-shadow .2s ease; }
+.search-inner:focus-within { box-shadow:0 0 22px rgba(224,155,108,.08); }
+@media(prefers-reduced-motion:reduce) { .vault-body .card,.search-inner { transition:none; } }

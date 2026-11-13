@@ -25,9 +25,25 @@ test('vault renders choice text vertically without copy buttons, alongside typed
   const html = elements.get('#results').innerHTML;
   const cards = html.split('<article class="card">').slice(1);
   assert.equal(cards.length, 4);
+  assert.doesNotMatch(html, /ดูตัวเลือกทั้งหมด|choice-details/);
   assert.deepEqual([...cards[0].matchAll(/<ul class="selected-list"><li>(.*?)<\/li><\/ul>/g)].map(m => m[1]), ['A','I','G','T','Y','V']);
   assert.match(cards[1], /<ul class="selected-list"><li>Jonathan is reading a Stephen King novel\.<\/li><li>Anjali wants to learn more about American life\.<\/li>/);
   assert.doesNotMatch(cards.slice(0,3).join(''), /data-copy-(id|all)/);
   assert.match(cards[2], /ข้อมูลต้นฉบับไม่ระบุ/);
   assert.match(cards[3], /data-copy-all="A1-0-1"/);
+});
+
+test('a rate-limited request offers a useful retry message', async () => {
+  class Element {
+    constructor() { this.value = ''; this.dataset = {}; this.options = [{textContent:'ทุกประเภท'}]; this.selectedIndex = 0; this.classList = {toggle(){},add(){},remove(){}}; }
+    querySelectorAll() { return []; } addEventListener() {} setAttribute() {} append() {} add() {}
+  }
+  const elements = new Map();
+  const document = {querySelector(key) { if (!elements.has(key)) elements.set(key, new Element()); return elements.get(key); }, addEventListener(){}};
+  const context = {document, Exercises, AbortController, URLSearchParams, setTimeout, clearTimeout, navigator:{}, window:{}, Option:function(){}, fetch:async () => ({ok:false,status:429})};
+  vm.runInNewContext(fs.readFileSync(require.resolve('../public/js/vault.js'), 'utf8'), context);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.match(elements.get('#status').textContent, /ค้นหาบ่อยเกินไป/);
+  assert.equal(elements.get('#more').hidden, false);
+  assert.equal(elements.get('#more').dataset.retry, '1');
 });
