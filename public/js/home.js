@@ -1,7 +1,6 @@
 const config = window.SITE_CONFIG || {};
 const owner = config.owner || {};
 document.querySelector('#ownerName').textContent = owner.name || 'ผู้จัดทำ';
-document.querySelector('#ownerTagline').textContent = owner.tagline || '';
 const photo = document.querySelector('#ownerPhoto');
 if (owner.photo) photo.src = owner.photo;
 photo.onerror = () => { photo.onerror = null; photo.src = '/assets/profile.svg'; };
