@@ -1,0 +1,3038 @@
+{
+  "schema_version": 2,
+  "chapter": {
+    "name": "A1",
+    "cid": "77",
+    "updated_at": "2026-11-12T21:48:37.071972",
+    "summary": {
+      "exercises": 96,
+      "pages": 93,
+      "answered_pages": 109
+    },
+    "catalog": [
+      {
+        "title": "One moment please",
+        "pages_total": 12
+      },
+      {
+        "title": "Is Mary there?",
+        "pages_total": 4
+      },
+      {
+        "title": "I'd like to speak to Ms Jones",
+        "pages_total": 4
+      },
+      {
+        "title": "On the phone",
+        "pages_total": 4
+      },
+      {
+        "title": "Can you start immediately?",
+        "pages_total": 0
+      },
+      {
+        "title": "Can you speak Spanish?",
+        "pages_total": 0
+      },
+      {
+        "title": "An interview",
+        "pages_total": 0
+      },
+      {
+        "title": "The world of work",
+        "pages_total": 0
+      },
+      {
+        "title": "I work in an office",
+        "pages_total": 0
+      },
+      {
+        "title": "Where do you work?",
+        "pages_total": 0
+      },
+      {
+        "title": "In an office",
+        "pages_total": 0
+      },
+      {
+        "title": "What is your job?",
+        "pages_total": 0
+      },
+      {
+        "title": "A bit of everything",
+        "pages_total": 0
+      },
+      {
+        "title": "Duties",
+        "pages_total": 0
+      },
+      {
+        "title": "How many, if any?",
+        "pages_total": 0
+      },
+      {
+        "title": "Sky, skies",
+        "pages_total": 0
+      },
+      {
+        "title": "Whose is it?",
+        "pages_total": 0
+      },
+      {
+        "title": "Yes, it's ours",
+        "pages_total": 0
+      },
+      {
+        "title": "Can you help me?",
+        "pages_total": 0
+      },
+      {
+        "title": "Her things",
+        "pages_total": 0
+      },
+      {
+        "title": "Give it to me",
+        "pages_total": 0
+      },
+      {
+        "title": "At the hot dog stand",
+        "pages_total": 0
+      },
+      {
+        "title": "Lunch break",
+        "pages_total": 0
+      },
+      {
+        "title": "I'm hungry!",
+        "pages_total": 0
+      },
+      {
+        "title": "Short words",
+        "pages_total": 0
+      },
+      {
+        "title": "Where are they?",
+        "pages_total": 0
+      },
+      {
+        "title": "Where is the car?",
+        "pages_total": 0
+      },
+      {
+        "title": "But of course ...",
+        "pages_total": 0
+      },
+      {
+        "title": "Don't be late!",
+        "pages_total": 0
+      },
+      {
+        "title": "Which is better?",
+        "pages_total": 0
+      },
+      {
+        "title": "Don't do that!",
+        "pages_total": 0
+      },
+      {
+        "title": "A view",
+        "pages_total": 0
+      },
+      {
+        "title": "Where's the post office?",
+        "pages_total": 0
+      },
+      {
+        "title": "How do I get there?",
+        "pages_total": 0
+      },
+      {
+        "title": "Tourists",
+        "pages_total": 0
+      },
+      {
+        "title": "In the city",
+        "pages_total": 0
+      },
+      {
+        "title": "Are there any restaurants?",
+        "pages_total": 0
+      },
+      {
+        "title": "In a grocery store",
+        "pages_total": 0
+      },
+      {
+        "title": "How many?",
+        "pages_total": 0
+      },
+      {
+        "title": "At the market",
+        "pages_total": 0
+      },
+      {
+        "title": "Something to eat?",
+        "pages_total": 0
+      },
+      {
+        "title": "Do you have any eggs?",
+        "pages_total": 0
+      },
+      {
+        "title": "Are you hungry?",
+        "pages_total": 0
+      },
+      {
+        "title": "What would you like?",
+        "pages_total": 0
+      },
+      {
+        "title": "Where is it?",
+        "pages_total": 0
+      },
+      {
+        "title": "It's bigger",
+        "pages_total": 0
+      },
+      {
+        "title": "City streets",
+        "pages_total": 0
+      },
+      {
+        "title": "In town",
+        "pages_total": 0
+      },
+      {
+        "title": "Bigger, better",
+        "pages_total": 0
+      },
+      {
+        "title": "Compare it!",
+        "pages_total": 0
+      },
+      {
+        "title": "Comparisons",
+        "pages_total": 0
+      },
+      {
+        "title": "It's better",
+        "pages_total": 0
+      },
+      {
+        "title": "Anything else?",
+        "pages_total": 0
+      },
+      {
+        "title": "How much is it?",
+        "pages_total": 0
+      },
+      {
+        "title": "Numbers",
+        "pages_total": 0
+      },
+      {
+        "title": "Buying groceries",
+        "pages_total": 0
+      },
+      {
+        "title": "Once more!",
+        "pages_total": 0
+      },
+      {
+        "title": "What is Sara doing?",
+        "pages_total": 0
+      },
+      {
+        "title": "You have to do it",
+        "pages_total": 0
+      },
+      {
+        "title": "What is it?",
+        "pages_total": 0
+      },
+      {
+        "title": "He is working",
+        "pages_total": 0
+      },
+      {
+        "title": "What is happening?",
+        "pages_total": 0
+      },
+      {
+        "title": "They are swimming",
+        "pages_total": 0
+      },
+      {
+        "title": "Getting together",
+        "pages_total": 0
+      },
+      {
+        "title": "I have a brother",
+        "pages_total": 0
+      },
+      {
+        "title": "Family members",
+        "pages_total": 0
+      },
+      {
+        "title": "Who is Barbara?",
+        "pages_total": 0
+      },
+      {
+        "title": "Meet the family",
+        "pages_total": 0
+      },
+      {
+        "title": "He's not a doctor",
+        "pages_total": 0
+      },
+      {
+        "title": "No, he's not",
+        "pages_total": 0
+      },
+      {
+        "title": "Who are they?",
+        "pages_total": 0
+      },
+      {
+        "title": "What do you have?",
+        "pages_total": 0
+      },
+      {
+        "title": "I live in a house",
+        "pages_total": 0
+      },
+      {
+        "title": "There's a garage",
+        "pages_total": 0
+      },
+      {
+        "title": "Home sweet home",
+        "pages_total": 0
+      },
+      {
+        "title": "Where do you live?",
+        "pages_total": 0
+      },
+      {
+        "title": "Where do you come from?",
+        "pages_total": 0
+      },
+      {
+        "title": "Who, what, where, when?",
+        "pages_total": 0
+      },
+      {
+        "title": "Questions",
+        "pages_total": 0
+      },
+      {
+        "title": "Airport vocabulary",
+        "pages_total": 0
+      },
+      {
+        "title": "I like coffee",
+        "pages_total": 0
+      },
+      {
+        "title": "Bacon for breakfast",
+        "pages_total": 0
+      },
+      {
+        "title": "Ask me a question",
+        "pages_total": 0
+      },
+      {
+        "title": "My breakfast",
+        "pages_total": 0
+      },
+      {
+        "title": "Laura is a doctor",
+        "pages_total": 0
+      },
+      {
+        "title": "She's a doctor",
+        "pages_total": 4
+      },
+      {
+        "title": "Personal pronouns",
+        "pages_total": 5
+      },
+      {
+        "title": "At the barbecue",
+        "pages_total": 5
+      },
+      {
+        "title": "How's it spelled?",
+        "pages_total": 15
+      },
+      {
+        "title": "What's your number?",
+        "pages_total": 4
+      },
+      {
+        "title": "Spell this!",
+        "pages_total": 4
+      },
+      {
+        "title": "A, B, C",
+        "pages_total": 4
+      },
+      {
+        "title": "Nice to meet you",
+        "pages_total": 15
+      },
+      {
+        "title": "To be",
+        "pages_total": 4
+      },
+      {
+        "title": "I'm fine",
+        "pages_total": 4
+      },
+      {
+        "title": "Hello",
+        "pages_total": 5
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "title": "A, B, C",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-single-choice",
+          "question": "Listen carefully and mark what you hear. | Which letter? | A\nK\nE\nI\nG\nJ\nT\nB\nI\nY\nW\nV",
+          "prompt": "Listen carefully and mark what you hear.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "timestamp": "2026-11-12T12:39:02.898743",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 2,
+          "type": "type-answer",
+          "question": "Listen and write the words that you hear. | A, B, C",
+          "prompt": "Listen and write the words that you hear.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "good",
+              "are",
+              "name",
+              "this",
+              "nice",
+              "night",
+              "fine",
+              "bye"
+            ],
+            "timestamp": "2026-11-12T12:39:12.441257"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 3,
+          "type": "type-toggle-solution",
+          "question": "Listen to the dialogue and then click on the blanks until you see the right answers. | The receptionist | Receptionist: Good morning.\nDonna: Good morning. I'm here for the conference.\nReceptionist: \n \nDonna: Donna Brown.\nReceptionist: \n \nDonna: My last name's Brown. B R O W N. \n \n D O N N A.",
+          "prompt": "Listen to the dialogue and then click on the blanks until you see the right answers.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "",
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:40:08.662079"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 4,
+          "type": "type-answer",
+          "question": "Click on the loudspeaker and write what you hear. All the words are proper nouns and start with a capital letter. | Names, names, names",
+          "prompt": "Click on the loudspeaker and write what you hear. All the words are proper nouns and start with a capital letter.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "Sarah Brown",
+              "David Hill",
+              "Jane Lewis",
+              "Brian Jones"
+            ],
+            "timestamp": "2026-11-12T12:39:23.450624"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        }
+      ]
+    },
+    {
+      "title": "At the barbecue",
+      "pages_total": 5,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-drag-drop",
+          "question": "Drag the missing words into the blanks. Use the pictures to help you. | Food",
+          "prompt": "Drag the missing words into the blanks. Use the pictures to help you.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "people",
+              "folks",
+              "orange juice",
+              "OJ",
+              "hamburger",
+              "burger"
+            ],
+            "timestamp": "2026-11-12T12:37:50.666890"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 2,
+          "type": "type-picture-choice",
+          "question": "Drag the pictures to the correct blanks. | BBQ | office\n sick\n steak\n drinks\n margarita\n chips and salsa",
+          "prompt": "Drag the pictures to the correct blanks.",
+          "answer": {
+            "type": "picture-choice",
+            "answers": [
+              {
+                "item_idx": 0,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/pc_buero4s1.jpg",
+                "drag_id": "drag-drop-166"
+              },
+              {
+                "item_idx": 1,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/pc_krank1s1.jpg",
+                "drag_id": "drag-drop-167"
+              },
+              {
+                "item_idx": 2,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/pc_steak1s1.jpg",
+                "drag_id": "drag-drop-168"
+              },
+              {
+                "item_idx": 3,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/pc_drinks1s1.jpg",
+                "drag_id": "drag-drop-169"
+              },
+              {
+                "item_idx": 4,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/pc_margarita1s1.jpg",
+                "drag_id": "drag-drop-170"
+              },
+              {
+                "item_idx": 5,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/pc_chips_salsas1.jpg",
+                "drag_id": "drag-drop-171"
+              }
+            ],
+            "timestamp": "2026-11-12T12:38:04.593505"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 3,
+          "type": "type-toggle-solution",
+          "question": "Click on the loudspeaker and listen carefully. Then select the correct solution for each blank. | At the barbecue | Jimmy: Here are the drinks, guys. Enjoy!\nEveryone: Thank you!\nJimmy: Hi, Melissa! Hi, Greg! \n \nGreg: Hi, Jimmy! We're \n \n, how about you?\nJimmy: I'm great. This is my girlfriend, Luisa.\nLuisa: Hello! \n \nMelissa: Nice to meet you, too. Where are you from?\nLuisa: I'm from Montana.\nMelissa: Oh, Montana is beautiful! I love Montana.\nJimmy: Hey, \n \n are Carey and Mike?\nMelissa: Oh, Carey's sick. And Mike's in the office.\nJimmy: What a workaholic! So, what would you like to \n \n?\nMelissa: I'd like an orange juice.\nGreg: And a margarita for me, please.\nJimmy: Okay.\nGreg: Hey, \n \n that?\nMelissa: It's salsa. And here are the chips.\nGreg: Oh, wonderful, I love chips and salsa. I'm so hungry! \n \n you?\nMelissa: Oh, yes! I'm ready to eat!\nRon: The steaks and burgers are ready, \n \n!",
+          "prompt": "Click on the loudspeaker and listen carefully. Then select the correct solution for each blank.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "How are you?",
+              "fine",
+              "Nice to meet you!",
+              "where",
+              "drink",
+              "what's",
+              "Are",
+              "folks"
+            ],
+            "timestamp": "2026-10-28T17:34:18.821269"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 4,
+          "type": "type-drag-drop-table",
+          "question": "Drag the articles into the correct blanks. | 'A' or 'an'? | an apricot\na book\n office\n ocean\n elephant\n drink\n salad\n ice cream\n steak\n workaholic",
+          "prompt": "Drag the articles into the correct blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "an",
+              "an",
+              "an",
+              "a",
+              "a",
+              "an",
+              "a",
+              "a"
+            ],
+            "timestamp": "2026-11-12T12:38:20.945391"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 5,
+          "type": "type-toggle-solution",
+          "question": "Click on the blank until you see the correct word. | What's personal? | You are beautiful.\n \n are angry.\n \n am sick.\n \n is happy.\n \n is a dog.\n \n are hungry.",
+          "prompt": "Click on the blank until you see the correct word.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "They",
+              "I",
+              "She",
+              "It",
+              "They"
+            ],
+            "timestamp": "2026-10-28T17:34:32.087507"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        }
+      ]
+    },
+    {
+      "title": "Government bodies",
+      "pages_total": 6,
+      "pages": [
+        {
+          "page": 2,
+          "type": "type-toggle-solution",
+          "question": "Find the best term for each definition. | Key government structures | Ministry\n: A principal division of a government, often responsible for a specific area like defense or foreign affairs.\nAgency\n: A government body or organization that performs a particular service, such as intelligence gathering or export control.\nNational Security Council\n: A high-level governmental forum for coordinating national security policy and inter-agency efforts.\nCivil Protection Body\n: An organization responsible for coordinating efforts to safeguard the population from disasters and emergencies. | Ministry",
+          "prompt": "Find the best term for each definition.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "Ministry",
+              "Agency",
+              "National Security Council",
+              "Civil Protection Body"
+            ],
+            "timestamp": "2026-11-12T12:00:37.341460"
+          },
+          "updated_at": "2026-11-12T12:01:13.279127"
+        },
+        {
+          "page": 3,
+          "type": "type-answer",
+          "question": "Click on the loudspeakers and write the missing words into the gaps. | Core security functions | Governments establish frameworks to control , ensuring they align with national interests and international law.\n The process by which governments acquire weapons, equipment, and services for national security is known as .\n  are dedicated to collecting and analyzing information to support government decision-making and threat assessment.\n National security  involves defining threats, risks, and principles to guide the state's provision of security.\n  aims to protect people and property from damage resulting from disasters, coordinating various bodies and administrations.",
+          "prompt": "Click on the loudspeakers and write the missing words into the gaps.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "arms exports",
+              "defense procurement",
+              "Intelligence services",
+              "policy formulation",
+              "Civil protection"
+            ],
+            "timestamp": "2026-11-12T12:00:44.049564"
+          },
+          "updated_at": "2026-11-12T12:01:13.279127"
+        },
+        {
+          "page": 4,
+          "type": "type-scrambled-table",
+          "question": "Match the correct ending to the beginning of these sentences. | Policy and operations | A Ministry of Defense is typically responsible for\t\noverseeing armed forces and defense procurement.\n\nNational Security Councils serve to integrate\t\nkey national security policies and inter-agency coordination.\n\nArms export controls are implemented to prevent\t\nweapon diversion and threats to international peace.\n\nIntelligence agencies provide vital information for\t\nthreat assessment and informed decision-making.\n\nCivil protection planning is a multi-level activity involving\t\ncoordinated efforts by various bodies to protect the population.",
+          "prompt": "Match the correct ending to the beginning of these sentences.",
+          "answer": {
+            "type": "scrambled-table",
+            "answers": [
+              {
+                "idx": 0,
+                "text": "overseeing armed forces and defense procurement."
+              },
+              {
+                "idx": 1,
+                "text": "key national security policies and inter-agency coordination."
+              },
+              {
+                "idx": 2,
+                "text": "weapon diversion and threats to international peace."
+              },
+              {
+                "idx": 3,
+                "text": "threat assessment and informed decision-making."
+              },
+              {
+                "idx": 4,
+                "text": "coordinated efforts by various bodies to protect the population."
+              }
+            ],
+            "timestamp": "2026-11-12T12:00:49.077802"
+          },
+          "updated_at": "2026-11-12T12:01:13.279127"
+        },
+        {
+          "page": 5,
+          "type": "type-single-choice",
+          "question": "Read the text. Then mark the correct answer to each question. | Guiding principles in defense | Which statement best describes the primary focus of defense procurement?Statement 1\nStatement 2\nStatement 3\nStatement 4\nStatement 5\nWhich statement underscores the importance of intelligence services in national security?Statement 1\nStatement 2\nStatement 3\nStatement 4\nStatement 5\nWhich statement highlights the core function of a body like a National Security Council?Statement 1\nStatement 2\nStatement 3\nStatement 4\nStatement 5\nWhich statement pertains to the critical role of arms export controls?Statement 1\nStatement 2\nStatement 3\nStatement 4\nStatement 5\nWhich statement encapsulates the main objective of civil protection and emergency management?Statement 1\nStatement 2\nStatement 3\nStatement 4\nStatement 5",
+          "prompt": "Read the text. Then mark the correct answer to each question.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              0,
+              4,
+              1,
+              3,
+              2
+            ],
+            "timestamp": "2026-11-12T12:00:56.354906",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-11-12T12:01:13.279127"
+        },
+        {
+          "page": 6,
+          "type": "type-single-choice",
+          "question": "Click on the loudspeaker to hear the text and then decide if the sentences that follow are true or false. | Inter-agency dialogue | The officials agree that intelligence gathering is the sole priority for the new national security strategy.True\nFalse\nOfficial B believes that civil protection is an important component of national resilience.True\nFalse\nThe officials identify resource allocation as a significant challenge in implementing the strategy.True\nFalse\nThere is a consensus between the officials that coordination between security sectors is already optimal.True\nFalse\nOfficial A downplays the importance of anticipating emerging threats.True\nFalse",
+          "prompt": "Click on the loudspeaker to hear the text and then decide if the sentences that follow are true or false.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "timestamp": "2026-11-12T12:01:07.106918",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-11-12T12:01:13.279127"
+        }
+      ]
+    },
+    {
+      "title": "Hello",
+      "pages_total": 5,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-toggle-solution",
+          "question": "Listen to the sentences and then click on the blanks until you see the right answers. | Hello | Hi, \nI'm\n Frank.\nHello, my \nname's\n Ellen.\nHello\n, I'm Janet.\nHi, \nI'm\n Mark Adams. | I'm",
+          "prompt": "Listen to the sentences and then click on the blanks until you see the right answers.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "I'm",
+              "name's",
+              "Hello",
+              "I'm"
+            ],
+            "timestamp": "2026-11-12T12:07:44.024047"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        },
+        {
+          "page": 2,
+          "type": "type-drag-drop-table",
+          "question": "Click on the loudspeakers, listen carefully and drag what you hear to the right blanks. | My name's Dave | Hi,  Karen.\nHello,  Peter.",
+          "prompt": "Click on the loudspeakers, listen carefully and drag what you hear to the right blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "I'm",
+              "my name's"
+            ],
+            "timestamp": "2026-11-12T12:07:50.506569"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        },
+        {
+          "page": 3,
+          "type": "type-picture-choice",
+          "question": "Click on the loudspeaker to hear the text. Then drag the appropriate picture into the blank. | Nice to meet you | I'm Nick Miller.\n My name's Paul Rogers.\n Nice to meet you.\n Nice to meet you, too.\n Hello, my name's Peter.\n Hi, I'm Karen.\n Nice to meet you.\n Nice to meet you, too.",
+          "prompt": "Click on the loudspeaker to hear the text. Then drag the appropriate picture into the blank.",
+          "answer": {
+            "type": "picture-choice",
+            "answers": [
+              {
+                "item_idx": 0,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/608631_01.jpg",
+                "drag_id": "drag-drop-235"
+              },
+              {
+                "item_idx": 1,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/608631_02.jpg",
+                "drag_id": "drag-drop-236"
+              }
+            ],
+            "timestamp": "2026-11-12T12:07:57.613821"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        },
+        {
+          "page": 4,
+          "type": "type-scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | .EllenMyname's\nHello,name's.Frankmy\nHi,.JanetI'm\nyouNice.tomeet\nNicemeetyou,.tooto",
+          "prompt": "Put the sentences back in order.",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-11-12T12:08:02.553779"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        },
+        {
+          "page": 5,
+          "type": "type-toggle-solution",
+          "question": "Listen to the dialogue and then click on the blanks until you see the right answers. | How are you? | Hi, Chris. How are you?\n I'm fine, thanks. \nAnd how about you?\n I'm okay.\n Good morning, Susan.\n Hello, Mark. \nHow are you?\n Very well, thank you. And how about you?\n I'm fine, thanks. | And how about you?",
+          "prompt": "Listen to the dialogue and then click on the blanks until you see the right answers.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "And how about you?",
+              "How are you?"
+            ],
+            "timestamp": "2026-11-12T12:08:06.364519"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        }
+      ]
+    },
+    {
+      "title": "How's it spelled?",
+      "pages_total": 15,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-multiple-item-pronunciation",
+          "question": "Practice your pronunciation. | Numbers | one\ntwo\nthree\nfour\nfive\nsix\nseven\neight\nnine\nten",
+          "prompt": "Practice your pronunciation.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "one",
+              "two",
+              "three",
+              "four",
+              "five",
+              "six",
+              "seven",
+              "eight",
+              "nine",
+              "ten"
+            ],
+            "timestamp": "2026-10-29T20:40:38.428066"
+          },
+          "updated_at": "2026-10-29T20:40:38.430986"
+        },
+        {
+          "page": 2,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Hello\n.\n \nI'm\n \nLisa\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Hello . I'm Lisa ."
+            ],
+            "timestamp": "2026-10-29T20:40:39.471331"
+          },
+          "updated_at": "2026-10-29T20:40:39.474195"
+        },
+        {
+          "page": 3,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Good morning\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Good morning ."
+            ],
+            "timestamp": "2026-10-29T20:40:39.668083"
+          },
+          "updated_at": "2026-10-29T20:40:39.670832"
+        },
+        {
+          "page": 4,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | What's\n \nyour\n \nname\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "What's your name ?"
+            ],
+            "timestamp": "2026-10-29T20:40:39.866510"
+          },
+          "updated_at": "2026-10-29T20:40:39.871640"
+        },
+        {
+          "page": 5,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | My\n \nfirst name's\n \nDonna\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "My first name's Donna ."
+            ],
+            "timestamp": "2026-10-29T20:40:40.274277"
+          },
+          "updated_at": "2026-10-29T20:40:40.277153"
+        },
+        {
+          "page": 6,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | My\n \nlast name's\n \nBrown\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "My last name's Brown ."
+            ],
+            "timestamp": "2026-10-29T20:40:40.791482"
+          },
+          "updated_at": "2026-10-29T20:40:40.794236"
+        },
+        {
+          "page": 7,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | How's\n \nit\n \nspelled\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "How's it spelled ?"
+            ],
+            "timestamp": "2026-10-29T20:40:41.093262"
+          },
+          "updated_at": "2026-10-29T20:40:41.096071"
+        },
+        {
+          "page": 8,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Sarah\n \nBrown",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Sarah Brown"
+            ],
+            "timestamp": "2026-10-29T20:40:41.408122"
+          },
+          "updated_at": "2026-10-29T20:40:41.412490"
+        },
+        {
+          "page": 9,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | David\n \nHill",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "David Hill"
+            ],
+            "timestamp": "2026-10-29T20:40:41.711274"
+          },
+          "updated_at": "2026-10-29T20:40:41.714438"
+        },
+        {
+          "page": 10,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Bill\n \nClinton",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Bill Clinton"
+            ],
+            "timestamp": "2026-10-29T20:40:42.012147"
+          },
+          "updated_at": "2026-10-29T20:40:42.015147"
+        },
+        {
+          "page": 11,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Liz\n \nTaylor",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Liz Taylor"
+            ],
+            "timestamp": "2026-10-29T20:40:42.312745"
+          },
+          "updated_at": "2026-10-29T20:40:42.315515"
+        },
+        {
+          "page": 12,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | What's\n \nyour\n \ntelephone\n \nnumber\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "What's your telephone number ?"
+            ],
+            "timestamp": "2026-10-29T20:40:42.613119"
+          },
+          "updated_at": "2026-10-29T20:40:42.616621"
+        },
+        {
+          "page": 13,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | It's\n \na\n \nconference\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "It's a conference ."
+            ],
+            "timestamp": "2026-10-29T20:40:42.914966"
+          },
+          "updated_at": "2026-10-29T20:40:42.918184"
+        },
+        {
+          "page": 14,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | That's\n \nright\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "That's right ."
+            ],
+            "timestamp": "2026-10-29T20:40:43.216431"
+          },
+          "updated_at": "2026-10-29T20:40:43.219432"
+        },
+        {
+          "page": 15,
+          "type": "type-multiple-item-pronunciation",
+          "question": "Repeat these words. The pronunciation of the respective consonant is always the same. | Tree talk | pine\naspen\nmaple\nbirch\nbeech\nredbud\nteak\noak\npalm\ntrunk\nbark\nbranch",
+          "prompt": "Repeat these words. The pronunciation of the respective consonant is always the same.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "pine",
+              "aspen",
+              "maple",
+              "birch",
+              "beech",
+              "redbud",
+              "teak",
+              "oak",
+              "palm",
+              "trunk",
+              "bark",
+              "branch"
+            ],
+            "timestamp": "2026-10-29T20:40:43.638594"
+          },
+          "updated_at": "2026-10-29T20:40:43.641851"
+        }
+      ]
+    },
+    {
+      "title": "I'd like to speak to Ms Jones",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-single-choice",
+          "question": "Click on the loudspeakers and mark the correct answer. | I'd like to speak to Ms Jones | Who reached their contact person? Steve\nJoe Hunt\nMary",
+          "prompt": "Click on the loudspeakers and mark the correct answer.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              1
+            ],
+            "timestamp": "2026-10-18T17:35:04.485036",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        },
+        {
+          "page": 2,
+          "type": "type-scrambled-table",
+          "question": "Match the correct ending to the beginning of these sentences. | One moment, please | Hold the\t\nline, please.\n\nJust\t\na moment, please.\n\nPlease\t\nhold.\n\nJust a\t\nsecond.\n\nHang\t\non, please.",
+          "prompt": "Match the correct ending to the beginning of these sentences.",
+          "answer": {
+            "type": "scrambled-table",
+            "answers": [
+              {
+                "idx": 0,
+                "text": "line, please."
+              },
+              {
+                "idx": 1,
+                "text": "a moment, please."
+              },
+              {
+                "idx": 2,
+                "text": "hold."
+              },
+              {
+                "idx": 3,
+                "text": "second."
+              },
+              {
+                "idx": 4,
+                "text": "on, please."
+              }
+            ],
+            "timestamp": "2026-10-18T17:35:17.491486"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        },
+        {
+          "page": 3,
+          "type": "type-drag-drop",
+          "question": "Click on the loudspeaker and then drag what you have heard into the blank. | Is that Jane?",
+          "prompt": "Click on the loudspeaker and then drag what you have heard into the blank.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "Is that Jane?",
+              "One moment, please.",
+              "I'd like to speak to Bill Adams.",
+              "No, she isn't."
+            ],
+            "timestamp": "2026-10-18T17:35:39.117219"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        },
+        {
+          "page": 4,
+          "type": "type-single-choice",
+          "question": "Mark the correct column. | Business or personal? | Hello?\t Business\t Personal\nFort Company.\t Business\t Personal\nHello, my name is Jane Smith.\t Business\t Personal\nThis is John.\t Business\t Personal\nI'd like to speak to Mary James.\t Business\t Personal\nIs Mary there?\t Business\t Personal",
+          "prompt": "Mark the correct column.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            "timestamp": "2026-10-18T17:35:52.536522",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        }
+      ]
+    },
+    {
+      "title": "I'm fine",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-multiple-choice",
+          "question": "Answer the question by marking the correct responses. | Fine | How are you? Very well, thank you.\nThank you.\nI'm fine, thanks.\nI'm okay.\nHow are you?\nHow about you?",
+          "prompt": "Answer the question by marking the correct responses.",
+          "answer": {
+            "type": "multiple-choice",
+            "answers": [
+              [
+                0,
+                2,
+                3
+              ]
+            ],
+            "timestamp": "2026-11-12T12:39:46.953707"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 2,
+          "type": "type-drag-drop",
+          "question": "Drag the missing words into the blanks. | I'm okay | Hello.\n Hi. \n Very well, thank you.\n I'm okay.",
+          "prompt": "Drag the missing words into the blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "How are you?",
+              "And how about you?",
+              "Thank you."
+            ],
+            "timestamp": "2026-11-12T12:39:55.555755"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 3,
+          "type": "type-drag-drop-table",
+          "question": "Click on the loudspeaker and then drag the answers into the correct blanks. | This is Brian | Brian, this is Nancy Smith. Nancy, this is Brian White.\n Hello. Nice to meet you, Nancy.\n Nice to meet you, too, Brian.\n Victoria, this is Steve. Steve, this is Victoria.\n Hi! How are you?\n Fine, thanks. How about you?",
+          "prompt": "Click on the loudspeaker and then drag the answers into the correct blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "At work",
+              "With friends"
+            ],
+            "timestamp": "2026-11-12T12:40:04.733926"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        },
+        {
+          "page": 4,
+          "type": "type-single-choice",
+          "question": "What do you say when you want to introduce someone? Choose the correct sentence. | Introduce Steve | Here is Steve.\nThis is Steve.\nHow is Steve?\nWho is Steve?",
+          "prompt": "What do you say when you want to introduce someone? Choose the correct sentence.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              1
+            ],
+            "timestamp": "2026-11-12T12:40:15.893498",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-11-12T12:45:01.403183"
+        }
+      ]
+    },
+    {
+      "title": "Is Mary there?",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-scrambled-table",
+          "question": "Match the correct ending to the beginning of these sentences. | Offering help | Can I take\t\na message?\n\nMay I\t\nhelp you?\n\nCould I give\t\nher a message?\n\nLet me take down your\t\nname and number.\n\nI'll pass\t\non the message.\n\nI'll tell her\t\nyou called.",
+          "prompt": "Match the correct ending to the beginning of these sentences.",
+          "answer": {
+            "type": "scrambled-table",
+            "answers": [
+              {
+                "idx": 0,
+                "text": "a message?"
+              },
+              {
+                "idx": 1,
+                "text": "help you?"
+              },
+              {
+                "idx": 2,
+                "text": "her a message?"
+              },
+              {
+                "idx": 3,
+                "text": "name and number."
+              },
+              {
+                "idx": 4,
+                "text": "on the message."
+              },
+              {
+                "idx": 5,
+                "text": "you called."
+              }
+            ],
+            "timestamp": "2026-11-12T12:42:05.752274"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": 2,
+          "type": "type-drag-drop",
+          "question": "Complete the sentences with the missing words. | Hello, is Mary there? | Hello, is  Mary? – Yes, it is.\nWould you like  while you wait? – Yes, thank you.\nWhat's your telephone ? – It's 565-9134.\nHello, is Mary ?  – Just a .",
+          "prompt": "Complete the sentences with the missing words.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "that",
+              "a cup of coffee",
+              "number",
+              "there",
+              "moment"
+            ],
+            "timestamp": "2026-11-12T12:42:11.992307"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": 3,
+          "type": "type-scrambled-sentence",
+          "question": "Put the words back in the right order. You can click on the loudspeaker to hear the sentence if you need help. | I'd like to speak to Mr Smith, please | Smith'sput?toCouldyoumeoffice,pleaseMrthrough\nMrCanpleaseto?ISmith,speak\ntryingI'mget hold of.Rogerto\n?IspleaseMarkthere,\nmeconnectCouldyouwith?Castle,pleaseMaria",
+          "prompt": "Put the words back in the right order. You can click on the loudspeaker to hear the sentence if you need help.",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "Could",
+                "you",
+                "put",
+                "me",
+                "through",
+                "to",
+                "Mr",
+                "Smith's",
+                "office,",
+                "please",
+                "?"
+              ],
+              [
+                "Can",
+                "I",
+                "speak",
+                "to",
+                "Mr",
+                "Smith,",
+                "please",
+                "?"
+              ],
+              [
+                "I'm",
+                "trying",
+                "to",
+                "get hold of",
+                "Roger",
+                "."
+              ],
+              [
+                "Is",
+                "Mark",
+                "there,",
+                "please",
+                "?"
+              ],
+              [
+                "Could",
+                "you",
+                "connect",
+                "me",
+                "with",
+                "Maria",
+                "Castle,",
+                "please",
+                "?"
+              ]
+            ],
+            "timestamp": "2026-11-12T12:42:21.308573"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": 4,
+          "type": "type-answer",
+          "question": "Click on the loudspeakers and fill in the blanks. | To call or not to call | Would you  Mr Sears  me?\n Could I  my number?\n Can you  Tom  me?\n I'll  him  you back.\n I'll  him  you.\n I'll  him  you after lunch.",
+          "prompt": "Click on the loudspeakers and fill in the blanks.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "ask",
+              "to call",
+              "leave",
+              "have",
+              "call",
+              "get",
+              "to call",
+              "have",
+              "contact",
+              "tell",
+              "to call"
+            ],
+            "timestamp": "2026-11-12T12:42:26.698828"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        }
+      ]
+    },
+    {
+      "title": "Left to our own devices",
+      "pages_total": 6,
+      "pages": [
+        {
+          "page": 2,
+          "type": "type-toggle-solution",
+          "question": "Choose the correct word for each blank. | An interdisciplinary team | Biomedical engineers\n design and develop medical devices. They create new technologies, improve existing devices, and ensure that devices meet regulatory standards.\nSales representatives\n promote and market medical devices to healthcare providers, distributors, and end-users. They build relationships with potential clients and educate customers about product benefits.\nQuality assurance specialists\n oversee the manufacturing process, ensuring that medical devices meet internal and external quality and safety standards through regular inspections, tests, and audits.\nClinical research associates\n are involved in clinical trials of medical devices. They plan and conduct studies, monitor and analyze data, and ensure that research is conducted in compliance with ethical standards and legal regulations. | Biomedical engineers",
+          "prompt": "Choose the correct word for each blank.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "Biomedical engineers",
+              "Sales representatives",
+              "Quality assurance specialists",
+              "Clinical research associates"
+            ],
+            "timestamp": "2026-10-30T21:18:01.912841"
+          },
+          "updated_at": "2026-10-30T21:20:49.221474"
+        },
+        {
+          "page": 3,
+          "type": "type-answer",
+          "question": "Click on the loudspeakers and write the missing words into the gaps. | Into the future | 3D printing technology has revolutionized the medical field by enabling the production of , prosthetics, and even intricate models for surgical planning. This technology allows for greater  in medical device design.\n The Internet of Things has  a new era of healthcare, where medical devices are interconnected to monitor and transmit patient data in real time. This allows healthcare providers to track a patient's health remotely, making  possible.\n Smart wearables like fitness trackers and smartwatches now go beyond simply counting your steps and can monitor your vital signs like your . These devices can provide users with  health data and even alert medical professionals in case of emergencies.",
+          "prompt": "Click on the loudspeakers and write the missing words into the gaps.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "patient-specific implants",
+              "customization and precision",
+              "ushered in",
+              "early intervention",
+              "heart rate and blood pressure",
+              "continuous"
+            ],
+            "timestamp": "2026-10-30T21:18:20.000701"
+          },
+          "updated_at": "2026-10-30T21:20:49.221474"
+        },
+        {
+          "page": 4,
+          "type": "type-scrambled-table",
+          "question": "Match the correct ending to the beginning of these sentences. | Classify that! | Although the phrase 'medical device' may conjure images of intensive care units\t\nthe truth is that many of the products you use every day are also considered medical devices by regulatory bodies.\n\nToothbrushes, bandages, and latex gloves\t\nare all examples of low-risk medical devices.\n\nPregnancy tests, powered wheelchairs, and contact lenses on the other hand\t\nare considered intermediate-risk devices and are subject to more regulatory controls.\n\nImplants like pacemakers and artificial joints, and life-sustaining equipment like high-frequency ventilators\t\nare clearly more critical and are classified as high-risk.\n\nEach regulatory authority has different criteria and regulations\t\nso classifications of specific devices vary around the world.",
+          "prompt": "Match the correct ending to the beginning of these sentences.",
+          "answer": {
+            "type": "scrambled-table",
+            "answers": [
+              {
+                "idx": 0,
+                "text": "the truth is that many of the products you use every day are also considered medical devices by regulatory bodies."
+              },
+              {
+                "idx": 1,
+                "text": "are all examples of low-risk medical devices."
+              },
+              {
+                "idx": 2,
+                "text": "are considered intermediate-risk devices and are subject to more regulatory controls."
+              },
+              {
+                "idx": 3,
+                "text": "are clearly more critical and are classified as high-risk."
+              },
+              {
+                "idx": 4,
+                "text": "so classifications of specific devices vary around the world."
+              }
+            ],
+            "timestamp": "2026-10-30T21:18:32.999061"
+          },
+          "updated_at": "2026-10-30T21:20:49.221474"
+        },
+        {
+          "page": 5,
+          "type": "type-multiple-choice",
+          "question": "Click on the text icon and read the text. Then mark all the correct answers for each question. | Devices of the past | Which of the following are mentioned in the text?MRI machines.\nCompound microscopes.\nWheelchairs.\nWhat does the text say about early spectacles?They didn't have over-ear frames like modern glasses.\nScientists were distrustful of them.\nThey were used by scholars and monks.\nWho discovered the x-ray?A French physician.\nA German physicist and engineer.\nA Dutch spectacle maker and jeweller.\nWhat were early prosthetics made of?Wood.\nStone.\nLeather.",
+          "prompt": "Click on the text icon and read the text. Then mark all the correct answers for each question.",
+          "answer": {
+            "type": "multiple-choice",
+            "answers": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "timestamp": "2026-10-30T21:18:55.230020"
+          },
+          "updated_at": "2026-10-30T21:20:49.221474"
+        },
+        {
+          "page": 6,
+          "type": "type-single-choice",
+          "question": "Click on the loudspeaker, listen to the dialogue, and decide if these sentences are true or false. | Regulatory oversight | The device that the speakers talk about is a cardiac implant.True\nFalse\nSteve is a cardiologist who works for a medical device manufacturer.True\nFalse\nBrent will be undergoing surgery soon.True\nFalse\nSteve's boss values the safety of their patients.True\nFalse\nAll medical devices are approved by one international regulatory agency.True\nFalse",
+          "prompt": "Click on the loudspeaker, listen to the dialogue, and decide if these sentences are true or false.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            "timestamp": "2026-10-30T21:19:11.780046",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-10-30T21:20:49.221474"
+        }
+      ]
+    },
+    {
+      "title": "Nice to meet you",
+      "pages_total": 15,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Hello\n,\n \nmy\n \nname's\n \nPeter\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Hello , my name's Peter ."
+            ],
+            "timestamp": "2026-10-29T20:39:45.520268"
+          },
+          "updated_at": "2026-10-29T20:39:45.524390"
+        },
+        {
+          "page": 2,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Hi\n,\n \nI'm\n \nKaren\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Hi , I'm Karen ."
+            ],
+            "timestamp": "2026-10-29T20:39:46.499134"
+          },
+          "updated_at": "2026-10-29T20:39:46.502274"
+        },
+        {
+          "page": 3,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Hi\n,\n \nI'm\n \nMark\n \nAdams\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Hi , I'm Mark Adams ."
+            ],
+            "timestamp": "2026-10-29T20:39:46.701330"
+          },
+          "updated_at": "2026-10-29T20:39:46.705138"
+        },
+        {
+          "page": 4,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Nice\n \nto\n \nmeet\n \nyou\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Nice to meet you ."
+            ],
+            "timestamp": "2026-10-29T20:39:46.894565"
+          },
+          "updated_at": "2026-10-29T20:39:46.897528"
+        },
+        {
+          "page": 5,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | My\n \nname's\n \nPaul\n \nRogers\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "My name's Paul Rogers ."
+            ],
+            "timestamp": "2026-10-29T20:39:47.088371"
+          },
+          "updated_at": "2026-10-29T20:39:47.091433"
+        },
+        {
+          "page": 6,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Hi\n,\n \nChris\n.\n \nHow\n \nare\n \nyou\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Hi , Chris . How are you ?"
+            ],
+            "timestamp": "2026-10-29T20:39:47.393707"
+          },
+          "updated_at": "2026-10-29T20:39:47.396586"
+        },
+        {
+          "page": 7,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Very\n \nwell\n,\n \nthank you\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Very well , thank you ."
+            ],
+            "timestamp": "2026-10-29T20:39:47.589007"
+          },
+          "updated_at": "2026-10-29T20:39:47.592545"
+        },
+        {
+          "page": 8,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | And\n \nhow\n \nabout\n \nyou\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "And how about you ?"
+            ],
+            "timestamp": "2026-10-29T20:39:47.881018"
+          },
+          "updated_at": "2026-10-29T20:39:47.883832"
+        },
+        {
+          "page": 9,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | I'm\n \nfine\n,\n \nthanks\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "I'm fine , thanks ."
+            ],
+            "timestamp": "2026-10-29T20:39:48.293239"
+          },
+          "updated_at": "2026-10-29T20:39:48.296302"
+        },
+        {
+          "page": 10,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Brian\n,\n \nthis\n \nis\n \nNancy\n \nSmith\n.",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Brian , this is Nancy Smith ."
+            ],
+            "timestamp": "2026-10-29T20:39:48.506749"
+          },
+          "updated_at": "2026-10-29T20:39:48.510321"
+        },
+        {
+          "page": 11,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | How\n \nare\n \nyou\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "How are you ?"
+            ],
+            "timestamp": "2026-10-29T20:39:48.812283"
+          },
+          "updated_at": "2026-10-29T20:39:48.815637"
+        },
+        {
+          "page": 12,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Goodbye\n!",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Goodbye !"
+            ],
+            "timestamp": "2026-10-29T20:39:49.217366"
+          },
+          "updated_at": "2026-10-29T20:39:49.221216"
+        },
+        {
+          "page": 13,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | See you later\n!",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "See you later !"
+            ],
+            "timestamp": "2026-10-29T20:39:49.516623"
+          },
+          "updated_at": "2026-10-29T20:39:49.519473"
+        },
+        {
+          "page": 14,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | Good evening\n!",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Good evening !"
+            ],
+            "timestamp": "2026-10-29T20:39:49.913505"
+          },
+          "updated_at": "2026-10-29T20:39:49.916429"
+        },
+        {
+          "page": 15,
+          "type": "type-multiple-item-pronunciation",
+          "question": "Listen carefully and then repeat the respective word. Pay attention to the differences when pronouncing the letter 'a'. | The United States of America | Alaska\nAlabama\nTexas\nArkansas\nMaine\nIdaho\nHawaii\nWashington\nKansas",
+          "prompt": "Listen carefully and then repeat the respective word. Pay attention to the differences when pronouncing the letter 'a'.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "Alaska",
+              "Alabama",
+              "Texas",
+              "Arkansas",
+              "Maine",
+              "Idaho",
+              "Hawaii",
+              "Washington",
+              "Kansas"
+            ],
+            "timestamp": "2026-10-29T20:39:50.122052"
+          },
+          "updated_at": "2026-10-29T20:39:50.126144"
+        }
+      ]
+    },
+    {
+      "title": "On the phone",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-picture-choice",
+          "question": "Click on the loudspeaker to hear the text. Then drag the appropriate picture into the blank. | On the phone | Anderson, Nelson and Company.\n Good morning. My name is Joe Hunt. I'd like to speak to Pat Nichols.\n Just a moment, please.\n Hello, Joe. How are you?\n Fine, thanks.\n Hello?\n Hello. Is that Mary?\n No, this is Judith.\n Hi, Judith, it's Steve. Is Mary there?\n No, she isn't.\n Okay, thanks. Bye.\n Bye Bye.",
+          "prompt": "Click on the loudspeaker to hear the text. Then drag the appropriate picture into the blank.",
+          "answer": {
+            "type": "picture-choice",
+            "answers": [
+              {
+                "item_idx": 0,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/608779_01.jpg",
+                "drag_id": "drag-drop-79"
+              },
+              {
+                "item_idx": 1,
+                "src": "https://d2d81dmxsitsnp.cloudfront.net/static/image/608779_02.jpg",
+                "drag_id": "drag-drop-80"
+              }
+            ],
+            "timestamp": "2026-10-18T17:33:58.263703"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        },
+        {
+          "page": 2,
+          "type": "type-drag-drop",
+          "question": "There are formal and informal ways of asking to speak to someone. Drag these sentences into the right blank. | Speaking to Tom Smith | Formal\nInformal",
+          "prompt": "There are formal and informal ways of asking to speak to someone. Drag these sentences into the right blank.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "Could you put me through to Mr Smith's office, please?",
+              "May I speak to Mr Smith, please?",
+              "Could you connect me with Tom Smith, please?",
+              "I'm trying to get hold of Tom.",
+              "Is Tom there?",
+              "Can you put Tom on, please?"
+            ],
+            "timestamp": "2026-10-18T17:34:15.811056"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        },
+        {
+          "page": 3,
+          "type": "type-scrambled-table",
+          "question": "Match the questions with the answers. | Hello? | DAZ Corporation, can I help you?\t\nSales department, please.\n\nCould you take a message?\t\nYes, of course, I'll get a pen.\n\nSorry, could you spell that, please?\t\nSure, it's S-A-L-A-S.\n\nI'm afraid he's in a meeting.\t\nOkay, I'll call back later.\n\nCould I speak to Ms Heinle, please?\t\nSpeaking.",
+          "prompt": "Match the questions with the answers.",
+          "answer": {
+            "type": "scrambled-table",
+            "answers": [
+              {
+                "idx": 0,
+                "text": "Sales department, please."
+              },
+              {
+                "idx": 1,
+                "text": "Yes, of course, I'll get a pen."
+              },
+              {
+                "idx": 2,
+                "text": "Sure, it's S-A-L-A-S."
+              },
+              {
+                "idx": 3,
+                "text": "Okay, I'll call back later."
+              },
+              {
+                "idx": 4,
+                "text": "Speaking."
+              }
+            ],
+            "timestamp": "2026-10-18T17:34:27.019408"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        },
+        {
+          "page": 4,
+          "type": "type-answer",
+          "question": "Click on the loudspeaker and fill in the numbers you hear. | Phone numbers",
+          "prompt": "Click on the loudspeaker and fill in the numbers you hear.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "865-8053",
+              "( 203) 765-9026",
+              "710-9003",
+              "( 714) 784-5345",
+              "814-5820"
+            ],
+            "timestamp": "2026-10-18T17:34:44.998332"
+          },
+          "updated_at": "2026-10-18T17:52:31.003185"
+        }
+      ]
+    },
+    {
+      "title": "One moment please",
+      "pages_total": 12,
+      "pages": [
+        {
+          "page": 10,
+          "type": "type-single-item-pronunciation",
+          "question": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence. | What's\n \nyour\n \ntelephone\n \nnumber\n?",
+          "prompt": "Listen to the sentence carefully. Then click on the microphone symbol and repeat the sentence.",
+          "answer": {
+            "type": "pronunciation",
+            "answers": [
+              "What's your telephone number ?"
+            ],
+            "timestamp": "2026-10-29T20:40:42.613119"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        }
+      ]
+    },
+    {
+      "title": "Personal pronouns",
+      "pages_total": 5,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-drag-drop-table",
+          "question": "Drag the personal pronouns to the appropriate place. | Personal pronouns | am\n\tare\n\tis\n\tis\n\tis\n\tare\n\tare",
+          "prompt": "Drag the personal pronouns to the appropriate place.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "I",
+              "you",
+              "he",
+              "she",
+              "it",
+              "we",
+              "they"
+            ],
+            "timestamp": "2026-11-12T12:42:46.109384"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": 2,
+          "type": "type-drag-drop-table",
+          "question": "Fill in the correct forms of 'be' and the personal pronouns. | At the cookout | Where are Carey and Mike?\nThey are at home.\nAre you hungry, Melissa?\n  hungry, Greg?\nWhere's the salsa?\n on the table.\nWhere are you, Luisa?\n here!\nWhere are you, Bill and Jerry?\n at the bar!\nAndrew and Steven are hungry.\n also thirsty.",
+          "prompt": "Fill in the correct forms of 'be' and the personal pronouns.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "Are",
+              "you",
+              "It's",
+              "I'm",
+              "We're",
+              "They're"
+            ],
+            "timestamp": "2026-11-12T12:43:02.239004"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": 4,
+          "type": "type-toggle-solution",
+          "question": "Click on the blank, go through the options and choose the correct solution. | And are you hungry, Greg? | Are\n you hungry, Melissa?\nAre\n they still in Germany?\nAre\n we in the right place?\nIs\n he in his office?\nAre\n they at home? | Are",
+          "prompt": "Click on the blank, go through the options and choose the correct solution.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "Are",
+              "Are",
+              "Are",
+              "Is",
+              "Are"
+            ],
+            "timestamp": "2026-11-12T12:43:22.057629"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": 5,
+          "type": "type-answer",
+          "question": "Complete the sentences with the correct present tense forms of 'be.' | Be ready! | The steaks  ready.\nI  happy to be here.\nThe sky  blue.\nShe  hungry.\nMike and Carey  not here.\nWe  not thirsty.\nJane, Robert and Brian  sitting down.",
+          "prompt": "Complete the sentences with the correct present tense forms of 'be.'",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "are",
+              "am",
+              "is",
+              "is",
+              "are",
+              "are",
+              "are"
+            ],
+            "timestamp": "2026-11-12T12:43:28.818018"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        }
+      ]
+    },
+    {
+      "title": "She's a doctor",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 4,
+          "type": "type-single-choice",
+          "question": "Click on the loudspeaker, listen to the dialogue, and decide if these sentences are true or false. | Who are you? | The steaks are ready.\nTrue\nFalse\nCarol is from Montana.\nTrue\nFalse\nMarilyn is a fashion model.\nTrue\nFalse",
+          "prompt": "Click on the loudspeaker, listen to the dialogue, and decide if these sentences are true or false.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [
+              0,
+              1,
+              0
+            ],
+            "timestamp": "2026-10-28T17:35:31.705192",
+            "subtype": "multi"
+          },
+          "updated_at": "2026-10-28T17:35:47.151191"
+        }
+      ]
+    },
+    {
+      "title": "Spell this!",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-answer",
+          "question": "Click on the loudspeaker and write what you hear. All the words are proper nouns and start with a capital letter. | Spell this!",
+          "prompt": "Click on the loudspeaker and write what you hear. All the words are proper nouns and start with a capital letter.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:40:18.068052"
+          },
+          "updated_at": "2026-10-29T20:40:18.070656"
+        },
+        {
+          "page": 2,
+          "type": "type-answer",
+          "question": "Click on the loudspeakers and write what you hear. | Famous people",
+          "prompt": "Click on the loudspeakers and write what you hear.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:40:18.469416"
+          },
+          "updated_at": "2026-10-29T20:40:18.472547"
+        },
+        {
+          "page": 3,
+          "type": "type-drag-drop-table",
+          "question": "Click on the loudspeaker and drag the words you hear into the correct blanks. | One, two, three | 0 zero\n1 one\n2 \n3 \n4 \n5 \n6 \n7 \n8 eight\n9 \n10",
+          "prompt": "Click on the loudspeaker and drag the words you hear into the correct blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "seven",
+              "five",
+              "four",
+              "nine",
+              "six",
+              "two",
+              "three",
+              "ten"
+            ],
+            "timestamp": "2026-10-29T20:40:18.998287"
+          },
+          "updated_at": "2026-10-29T20:40:19.000808"
+        },
+        {
+          "page": 4,
+          "type": "type-answer",
+          "question": "Click on the loudspeaker and fill in the numbers you hear. | Telephone numbers | Name\tAddress\tTelephone Number\n\tPeter Adams\tBrown Street\t-\n\tMary Baker\tForest Road\t-\n\tJohn Cook\tLake Street\t-",
+          "prompt": "Click on the loudspeaker and fill in the numbers you hear.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:40:19.178816"
+          },
+          "updated_at": "2026-10-29T20:40:19.181467"
+        }
+      ]
+    },
+    {
+      "title": "To be",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-answer",
+          "question": "Take a very close look at this exercise. Then, click on \"Start\" to begin. | To be Start | My name's Ann.\nI'm Janet. Nice to meet you.\nI'm fine.\nHow are you?\nThis is Nancy.\nMy name's Paula.\nI'm okay. How about you?",
+          "prompt": "Complete the sentences using a form of the verb 'be.' Use the short form where possible.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "'m",
+              "'m",
+              "are",
+              "is",
+              "'s",
+              "'m"
+            ],
+            "timestamp": "2026-10-29T20:39:35.747078"
+          },
+          "updated_at": "2026-10-29T20:39:35.751865"
+        },
+        {
+          "page": 2,
+          "type": "type-drag-drop",
+          "question": "Match the words with the correct pictures. | Hello",
+          "prompt": "Match the words with the correct pictures.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "good afternoon",
+              "good evening",
+              "good morning"
+            ],
+            "timestamp": "2026-10-29T20:39:35.966434"
+          },
+          "updated_at": "2026-10-29T20:39:35.969005"
+        },
+        {
+          "page": 3,
+          "type": "type-drag-drop",
+          "question": "Which words belong in which group? Drag the words into the correct blanks. | What time? | 07:00 - 12:00:\nHow are you?\nSee you later!\n12:00 - 18:00:\nGoodbye.\nSee you later!\n18:00 - 24:00:\nGood evening.\nHow are you?\nGoodbye.",
+          "prompt": "Which words belong in which group? Drag the words into the correct blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "Good afternoon.",
+              "Goodbye.",
+              "Good morning.",
+              "Good night.",
+              "How are you?"
+            ],
+            "timestamp": "2026-10-29T20:39:36.175674"
+          },
+          "updated_at": "2026-10-29T20:39:36.179737"
+        },
+        {
+          "page": 4,
+          "type": "type-drag-drop-table",
+          "question": "Click on the loudspeaker and drag the words you hear into the correct blanks. | Goodbye | Goodbye!\nBye!\nSee you later!\nGood night!",
+          "prompt": "Click on the loudspeaker and drag the words you hear into the correct blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "Okay, bye!",
+              "Bye!",
+              "Bye-bye!",
+              "Good night!"
+            ],
+            "timestamp": "2026-10-29T20:39:36.491128"
+          },
+          "updated_at": "2026-10-29T20:39:36.493812"
+        }
+      ]
+    },
+    {
+      "title": "What's your number?",
+      "pages_total": 4,
+      "pages": [
+        {
+          "page": 1,
+          "type": "type-drag-drop",
+          "question": "Click on the loudspeaker and drag the telephone numbers into the correct blanks. | What's your telephone number?",
+          "prompt": "Click on the loudspeaker and drag the telephone numbers into the correct blanks.",
+          "answer": {
+            "type": "drag-drop",
+            "answers": [
+              "311 5764",
+              "979 5358",
+              "424 7676",
+              "569 4321",
+              "757 6632",
+              "978 5348",
+              "543 6128",
+              "762 2126",
+              "145 9983",
+              "726 1262",
+              "424 7766",
+              "692 4875"
+            ],
+            "timestamp": "2026-10-29T20:40:27.528722"
+          },
+          "updated_at": "2026-10-29T20:40:27.531250"
+        },
+        {
+          "page": 2,
+          "type": "type-single-choice",
+          "question": "Click on the loudspeaker and mark the correct answer. | Tom Brown and the receptionist | Receptionist: What's your telephone number?\nTom: It's 345-0767.\nReceptionist: 344-0776?\nTom: No, it's 345-0767.\nReceptionist: Oh, sorry. 345-0767.\nTom: Yes, that's right.\nWho made a mistake? Tom Brown.\nThe receptionist.",
+          "prompt": "Click on the loudspeaker and mark the correct answer.",
+          "answer": {
+            "type": "single-choice",
+            "answers": [],
+            "timestamp": "2026-10-29T20:40:27.955859"
+          },
+          "updated_at": "2026-10-29T20:40:27.958530"
+        },
+        {
+          "page": 3,
+          "type": "type-toggle-solution",
+          "question": "Click on the blank until you see the correct word. | What's the right word? | your name?\n \n it spelled?\n \n are you?\n \n your telephone number?\n \n about you?",
+          "prompt": "Click on the blank until you see the correct word.",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:40:28.142194"
+          },
+          "updated_at": "2026-10-29T20:40:28.145182"
+        },
+        {
+          "page": 4,
+          "type": "type-answer",
+          "question": "Take a very close look at this exercise. Then, click on \"Start\" to begin. | The short form of 'be' Start | What's your telephone number?\nI'm okay.\nIt's 776-8099.\nWhat's your name?\nI'm fine, thanks.\nHello. I'm Lisa.\nThat's right.\nHow's it spelled?",
+          "prompt": "Fill in the blanks with the correct short forms.",
+          "answer": {
+            "type": "answer",
+            "answers": [
+              "'s",
+              "'m",
+              "'s",
+              "'s",
+              "'m",
+              "'m",
+              "'s",
+              "'s"
+            ],
+            "timestamp": "2026-10-29T20:40:28.830988"
+          },
+          "updated_at": "2026-10-29T20:40:28.834042"
+        }
+      ]
+    },
+    {
+      "title": "Imported answers (legacy)",
+      "pages_total": 0,
+      "pages": [
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | .Ellenname'sMy\nmy.name'sHello,Frank\nHi,.JanetI'm\nto.meetNiceyou\ntoyou,toomeetNice.",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-22T19:11:12.601425"
+          },
+          "updated_at": "2026-10-23T19:52:32.873342"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Myname'sEllen.\nHello,name's.Frankmy\nHi,I'm.Janet\nmeettoNice.you\ntootoNice.meetyou,",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-23T19:52:24.691279"
+          },
+          "updated_at": "2026-10-28T14:17:43.935898"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Ellenname'sMy.\n.FrankHello,myname's\nI'm.Hi,Janet\n.Nicemeetyouto\ntooyou,toNicemeet.",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-28T14:17:36.830403"
+          },
+          "updated_at": "2026-10-28T17:10:41.645865"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Myname's.Ellen\nname'sHello,.Frankmy\n.JanetI'mHi,\nNicemeetyouto.\nto.you,Nicetoomeet",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-28T17:10:35.056858"
+          },
+          "updated_at": "2026-10-28T17:27:51.097791"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Ellenname'sMy.\nmyFrankname's.Hello,\nI'mJanetHi,.\ntoyoumeet.Nice\nyou,Nicetotoo.meet",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-28T17:27:49.823222"
+          },
+          "updated_at": "2026-10-28T17:41:07.600032"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Ellen.Myname's\nmyHello,name'sFrank.\nHi,.JanetI'm\nmeettoNiceyou.\nNicemeettoyou,too.",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-28T17:40:44.468878"
+          },
+          "updated_at": "2026-10-28T18:04:27.752588"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | .Myname'sEllen\nname'sFrank.Hello,my\nHi,.I'mJanet\nNiceto.youmeet\nto.meetyou,Nicetoo",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-28T18:21:34.102526"
+          },
+          "updated_at": "2026-10-28T18:30:44.780817"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Myname'sEllen.\nHello,myname'sFrank.\nHi,I'mJanet.\nNicetomeetyou.\nNicetomeetyou,too.",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "My",
+                "name's",
+                "Ellen",
+                "."
+              ],
+              [
+                "Hello,",
+                "my",
+                "name's",
+                "Frank",
+                "."
+              ],
+              [
+                "Hi,",
+                "I'm",
+                "Janet",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you",
+                "."
+              ],
+              [
+                "Nice",
+                "to",
+                "meet",
+                "you,",
+                "too",
+                "."
+              ]
+            ],
+            "timestamp": "2026-10-18T17:58:31.948433"
+          },
+          "updated_at": "2026-10-29T20:39:15.139681"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | .name'sMyEllen\nHello,Frank.name'smy\nHi,I'm.Janet\nmeet.youNiceto\ntootomeetNice.you,",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-10-29T20:39:15.135674"
+          },
+          "updated_at": "2026-10-30T20:49:59.246061"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Ellenname's.My\n.name'sFrankmyHello,\n.JanetI'mHi,\nmeetNiceyouto.\nNicetoyou,meettoo.",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-10-30T20:49:33.709562"
+          },
+          "updated_at": "2026-10-30T21:17:42.804248"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Ellenname's.My\nname'smyFrankHello,.\nJanet.I'mHi,\nyou.toNicemeet\nNiceyou,meet.totoo",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-10-30T21:17:22.690373"
+          },
+          "updated_at": "2026-11-12T11:34:14.444184"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | Ellen.Myname's\nFrankname's.Hello,my\n.I'mJanetHi,\nyouto.Nicemeet\nNicetooyou,.tomeet",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-11-12T11:34:13.378749"
+          },
+          "updated_at": "2026-11-12T12:00:16.520822"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | MyEllen.name's\nHello,myname's.Frank\nJanetI'mHi,.\nNice.tomeetyou\nmeettooNiceyou,.to",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-11-12T12:00:15.477047"
+          },
+          "updated_at": "2026-11-12T12:04:47.059969"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the sentences back in order. | My name's Ellen | .MyEllenname's\nmyFrankname's.Hello,\n.JanetHi,I'm\n.toNicemeetyou\nNicetoomeet.toyou,",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                ".",
+                "name's",
+                "My",
+                "Ellen"
+              ],
+              [
+                "Hello,",
+                "Frank",
+                ".",
+                "name's",
+                "my"
+              ],
+              [
+                "Hi,",
+                "I'm",
+                ".",
+                "Janet"
+              ],
+              [
+                "meet",
+                ".",
+                "you",
+                "Nice",
+                "to"
+              ],
+              [
+                "too",
+                "to",
+                "meet",
+                "Nice",
+                ".",
+                "you,"
+              ]
+            ],
+            "timestamp": "2026-11-12T12:04:46.049446"
+          },
+          "updated_at": "2026-11-12T12:08:03.569956"
+        },
+        {
+          "page": null,
+          "type": "toggle-solution",
+          "question": "Listen to the dialogue and then click on the blanks until you see the right answers. | How are you? | Hi, Chris. How are you?\n I'm fine, thanks. \n \n I'm okay.\n Good morning, Susan.\n Hello, Mark. \n \n Very well, thank you. And how about you?\n I'm fine, thanks.",
+          "prompt": "",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:39:15.424524"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        },
+        {
+          "page": null,
+          "type": "toggle-solution",
+          "question": "Listen to the sentences and then click on the blanks until you see the right answers. | Hello | Hi, \n \n Frank.\nHello, my \n \n Ellen.\n \n, I'm Janet.\nHi, \n \n Mark Adams.",
+          "prompt": "",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "timestamp": "2026-10-29T20:39:13.925469"
+          },
+          "updated_at": "2026-11-12T12:30:13.194216"
+        },
+        {
+          "page": null,
+          "type": "scrambled-sentence",
+          "question": "Put the words back in the right order. You can click on the loudspeaker to hear the sentence if you need help. | I'd like to speak to Mr Smith, please | CouldyouputmethroughtoMrSmith'soffice,please?\nCanIspeaktoMrSmith,please?\nI'mtryingtoget hold ofRoger.\nIsMarkthere,please?\nCouldyouconnectmewithMariaCastle,please?",
+          "prompt": "",
+          "answer": {
+            "type": "scrambled-sentence",
+            "answers": [
+              [
+                "Could",
+                "you",
+                "put",
+                "me",
+                "through",
+                "to",
+                "Mr",
+                "Smith's",
+                "office,",
+                "please",
+                "?"
+              ],
+              [
+                "Can",
+                "I",
+                "speak",
+                "to",
+                "Mr",
+                "Smith,",
+                "please",
+                "?"
+              ],
+              [
+                "I'm",
+                "trying",
+                "to",
+                "get hold of",
+                "Roger",
+                "."
+              ],
+              [
+                "Is",
+                "Mark",
+                "there,",
+                "please",
+                "?"
+              ],
+              [
+                "Could",
+                "you",
+                "connect",
+                "me",
+                "with",
+                "Maria",
+                "Castle,",
+                "please",
+                "?"
+              ]
+            ],
+            "timestamp": "2026-10-18T17:36:45.642589"
+          },
+          "updated_at": "2026-11-12T12:42:22.310244"
+        },
+        {
+          "page": null,
+          "type": "toggle-solution",
+          "question": "Click on the blank, go through the options and choose the correct solution. | And are you hungry, Greg? | you hungry, Melissa?\n \n they still in Germany?\n \n we in the right place?\n \n he in his office?\n \n they at home?",
+          "prompt": "",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "Are",
+              "Are",
+              "Are",
+              "Is",
+              "Are"
+            ],
+            "timestamp": "2026-10-28T17:35:03.854885"
+          },
+          "updated_at": "2026-11-12T12:43:31.620452"
+        },
+        {
+          "page": null,
+          "type": "toggle-solution",
+          "question": "Click on the loudspeaker and listen carefully. Then select the correct solution for each blank. | At the barbecue | Jimmy: Here are the drinks, guys. Enjoy!\nEveryone: Thank you!\nJimmy: Hi, Melissa! Hi, Greg! \nHow are you?\nGreg: Hi, Jimmy! We're \nfine\n, how about you?\nJimmy: I'm great. This is my girlfriend, Luisa.\nLuisa: Hello! \nNice to meet you!\nMelissa: Nice to meet you, too. Where are you from?\nLuisa: I'm from Montana.\nMelissa: Oh, Montana is beautiful! I love Montana.\nJimmy: Hey, \nwhere\n are Carey and Mike?\nMelissa: Oh, Carey's sick. And Mike's in the office.\nJimmy: What a workaholic! So, what would you like to \ndrink\n?\nMelissa: I'd like an orange juice.\nGreg: And a margarita for me, please.\nJimmy: Okay.\nGreg: Hey, \nwhat's\n that?\nMelissa: It's salsa. And here are the chips.\nGreg: Oh, wonderful, I love chips and salsa. I'm so hungry! \nAre\n you?\nMelissa: Oh, yes! I'm ready to eat!\nRon: The steaks and burgers are ready, \nfolks\n! | How are you?",
+          "prompt": "",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "How are you?",
+              "fine",
+              "Nice to meet you!",
+              "where",
+              "drink",
+              "what's",
+              "Are",
+              "folks"
+            ],
+            "timestamp": "2026-11-12T12:38:13.745178"
+          },
+          "updated_at": "2026-11-12T12:44:21.959953"
+        },
+        {
+          "page": null,
+          "type": "toggle-solution",
+          "question": "Click on the blank until you see the correct word. | What's personal? | You are beautiful.\nThey\n are angry.\nI\n am sick.\nShe\n is happy.\nIt\n is a dog.\nThey\n are hungry. | They",
+          "prompt": "",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "They",
+              "I",
+              "She",
+              "It",
+              "They"
+            ],
+            "timestamp": "2026-11-12T12:38:39.510201"
+          },
+          "updated_at": "2026-11-12T12:44:21.959953"
+        },
+        {
+          "page": null,
+          "type": "toggle-solution",
+          "question": "Listen to the dialogue and then click on the blanks until you see the right answers. | The receptionist | Receptionist: Good morning.\nDonna: Good morning. I'm here for the conference.\nReceptionist: \nWhat's your name?\nDonna: Donna Brown.\nReceptionist: \nHow's it spelled?\nDonna: My last name's Brown. B R O W N. \nMy first name's Donna.\n D O N N A. | What's your name?",
+          "prompt": "",
+          "answer": {
+            "type": "toggle-solution",
+            "answers": [
+              "What's your name?",
+              "How's it spelled?",
+              "My first name's Donna."
+            ],
+            "timestamp": "2026-11-12T12:39:17.185872"
+          },
+          "updated_at": "2026-11-12T12:44:41.390386"
+        }
+      ]
+    }
+  ]
+}
