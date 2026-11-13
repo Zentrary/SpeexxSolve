@@ -11,13 +11,15 @@ function request(url, method = 'GET') {
 test('pagination preserves original order and caps results', () => {
   const first = request('/api/search'); const second = request('/api/search?page=2');
   assert.equal(first.code, 200); assert.equal(first.body.items.length, 20);
-  assert.equal(first.body.total, data.items.length); assert.equal(first.body.hasMore, true);
+  assert.equal(first.body.total, data.items.length); assert.equal(first.body.totalItems, data.items.length); assert.equal(first.body.hasMore, true);
   assert.deepEqual([...first.body.items, ...second.body.items].map(i => i.id), data.items.slice(0,40).map(i => i.id));
   assert.equal(first.headers['Cache-Control'], 'no-store');
 });
 test('search and filters retain source order', () => {
   const result = request('/api/search?q=hello&chapter=A1');
   assert.ok(result.body.items.length > 0);
+  assert.equal(result.body.totalItems, data.items.length);
+  assert.ok(result.body.total < result.body.totalItems);
   assert.ok(result.body.items.every(i => i.chapter === 'A1'));
   const order = new Map(data.items.map((i, n) => [i.id, n]));
   const indices = result.body.items.map(i => order.get(i.id));
