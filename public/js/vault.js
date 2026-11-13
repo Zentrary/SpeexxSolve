@@ -210,8 +210,8 @@
   }
   const results = $('#results'), status = $('#status'), more = $('#more');
   const search = $('#search'), type = $('#type'), levels = $('#levels'), clearSearch = $('#clear-search');
-  const filterSummary = $('#filter-summary');
-  let selectedChapter = 'all';
+  const filterSummary = $('#filter-summary'), lesson = $('#lesson'), lessonFilter = $('#lesson-filter');
+  let selectedChapter = 'all', selectedLesson = 'all';
   let page = 1, currentItems = [], requestNumber = 0, controller, timer, filtersReady = false;
   function syncFilters() {
     levels.querySelectorAll('[data-level]').forEach(button => {
@@ -220,7 +220,9 @@
       button.setAttribute('aria-pressed', String(active));
     });
     const typeLabel = type.options[type.selectedIndex]?.textContent || 'ทุกประเภท';
-    filterSummary.textContent = `${selectedChapter === 'all' ? 'ทุกระดับ' : selectedChapter} · ${typeLabel}`;
+    const lessonLabel = selectedLesson !== 'all' ? lesson.options[lesson.selectedIndex]?.textContent : '';
+    filterSummary.textContent = [selectedChapter === 'all' ? 'ทุกระดับ' : selectedChapter, lessonLabel, typeLabel].filter(Boolean).join(' · ');
+    lessonFilter.hidden = selectedChapter === 'all';
     clearSearch.hidden = !search.value;
   }
   function card(item, position) {
@@ -237,15 +239,17 @@
         ? `<details class="question-block question-details" open><summary><span class="block-label">โจทย์</span><span>ซ่อน / แสดงโจทย์ <span class="details-arrow" aria-hidden="true">↓</span></span></summary><div class="question-body">${esc(item.body)}</div></details>`
         : `<div class="question-block"><div class="block-label">โจทย์</div><div class="question-body">${esc(item.body)}</div></div>`) : '';
     const answer = isChoice ? renderChoices(item) : renderAnswer({ ...item, answerType: details.kind }, null);
-    return `<article class="card"><div class="card-topline"><div class="badges"><span>${esc(item.chapter)}</span><span>${esc(details.label)}</span><span>หน้า ${esc(item.page ?? '—')}</span></div><span class="card-number" aria-label="ผลลัพธ์ลำดับที่ ${position}">#${String(position).padStart(2, '0')}</span></div>${item.exercise && item.exercise !== item.title ? `<p class="card-exercise">${esc(item.exercise)}</p>` : ''}<h3>${esc(item.title || item.exercise || 'ไม่มีชื่อข้อ')}</h3>${prompt}<div class="how-to"><strong>วิธีทำ</strong><span>${esc(details.instruction)}</span></div>${question}<div class="answer-panel"><div class="answer-head"><span class="answer-indicator" aria-hidden="true">✳</span>${parsed ? 'โจทย์และคำตอบ' : 'คำตอบ'}</div>${answer}</div></article>`;
+    return `<article class="card"><div class="card-topline"><div class="badges"><span>${esc(item.chapter)}</span><span>${esc(details.label)}</span><span>หน้า ${esc(item.page ?? '—')}</span></div><span class="card-number" aria-label="ผลลัพธ์ลำดับที่ ${position}">#${String(position).padStart(2, '0')}</span></div>${item.exercise && item.exercise !== item.title ? `<p class="card-exercise">${esc(item.exercise === 'Imported answers (legacy)' ? 'ข้อมูลนำเข้า (ไม่ระบุบท)' : item.exercise)}</p>` : ''}<h3>${esc(item.title || item.exercise || 'ไม่มีชื่อข้อ')}</h3>${prompt}<div class="how-to"><strong>วิธีทำ</strong><span>${esc(details.instruction)}</span></div>${question}<div class="answer-panel"><div class="answer-head"><span class="answer-indicator" aria-hidden="true">✳</span>${parsed ? 'โจทย์และคำตอบ' : 'คำตอบ'}</div>${answer}</div></article>`;
   }
   async function load(append = false) {
     if (controller) controller.abort();
     controller = new AbortController();
     const number = ++requestNumber;
     if (!append) { page = 1; currentItems = []; results.innerHTML = ''; }
-    more.hidden = true; status.textContent = 'กำลังค้นหา…'; syncFilters();
-    const params = new URLSearchParams({q: search.value.trim(), chapter: selectedChapter, type: type.value, page: String(page)});
+    more.hidden = true; status.textContent = 'กำลังค้นหา…';
+    lesson.disabled = true;
+    syncFilters();
+    const params = new URLSearchParams({q: search.value.trim(), chapter: selectedChapter, lesson: selectedLesson, type: type.value, page: String(page)});
     try {
       const response = await fetch('/api/search?' + params, {signal: controller.signal});
       if (response.status === 429) throw new Error('rate-limited');
@@ -258,6 +262,12 @@
         $('#total-levels').textContent = data.chapters.length.toLocaleString('th-TH');
         for (const [value, label] of data.types) type.add(new Option(label, value));
         filtersReady = true;
+      }
+      if (selectedChapter !== 'all') {
+        lesson.replaceChildren(new Option('ทุกบทเรียน', 'all'));
+        for (const entry of data.lessons || []) lesson.add(new Option(entry.name, entry.id));
+        lesson.value = selectedLesson;
+        lesson.disabled = false;
       }
       const start = currentItems.length;
       currentItems.push(...data.items);
@@ -280,10 +290,12 @@
   levels.addEventListener('click', event => {
     const button = event.target.closest('[data-level]');
     if (!button || !levels.contains(button)) return;
-    clearTimeout(timer); selectedChapter = button.dataset.level; syncFilters(); load();
+    clearTimeout(timer); selectedChapter = button.dataset.level; selectedLesson = 'all';
+    lesson.replaceChildren(new Option('ทุกบทเรียน', 'all')); lesson.value = 'all'; syncFilters(); load();
   });
+  lesson.addEventListener('change', () => { clearTimeout(timer); selectedLesson = lesson.value; syncFilters(); load(); });
   type.addEventListener('change', () => { clearTimeout(timer); syncFilters(); load(); });
-  $('#reset').addEventListener('click', () => { clearTimeout(timer); search.value = ''; selectedChapter = 'all'; type.value = 'all'; syncFilters(); load(); });
+  $('#reset').addEventListener('click', () => { clearTimeout(timer); search.value = ''; selectedChapter = 'all'; selectedLesson = 'all'; lesson.replaceChildren(new Option('ทุกบทเรียน', 'all')); lesson.value = 'all'; type.value = 'all'; syncFilters(); load(); });
   more.addEventListener('click', () => { if (!more.dataset.retry) page++; delete more.dataset.retry; more.textContent = 'แสดงเพิ่มเติม'; load(page > 1); });
   const toast = $('#toast'); let toastTimer;
   function notify(message) { toast.textContent = message; toast.classList.add('visible'); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('visible'), 2500); }

@@ -2,7 +2,8 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const search = require('../api/search');
 const data = require('../server/data.json');
-const visibleItems = data.items.filter(item => item.answerType !== 'pronunciation');
+const { deduplicateLegacy } = require('../server/catalog');
+const visibleItems = deduplicateLegacy(data.items).filter(item => item.answerType !== 'pronunciation');
 function request(url, method = 'GET', address = 'test-default') {
   let code, body; const headers = {};
   const res = { setHeader: (k,v) => headers[k] = v, status: n => { code = n; return res; }, json: data => { body = data; return res; } };
@@ -56,4 +57,31 @@ test('repeated requests receive 429 and a retry interval', () => {
   assert.equal(limited.code, 429);
   assert.ok(Number(limited.headers['Retry-After']) > 0);
   assert.equal(request('/api/search', 'GET', 'other-client').code, 200);
+});
+
+test('lessons are scoped to the selected level and filter with search and type', () => {
+  const all = request('/api/search');
+  assert.deepEqual(all.body.lessons, []);
+  const level = request('/api/search?chapter=A1');
+  assert.ok(level.body.lessons.length > 0);
+  assert.equal(new Set(level.body.lessons.map(l => l.id)).size, level.body.lessons.length);
+  const lesson = level.body.lessons.find(l => l.name === 'A, B, C');
+  assert.ok(lesson);
+  const result = request('/api/search?chapter=A1&lesson=' + encodeURIComponent(lesson.id) + '&type=answer&q=names');
+  assert.ok(result.body.items.length > 0);
+  assert.ok(result.body.items.every(i => i.chapter === 'A1' && i.exercise === lesson.name && i.answerType === 'answer'));
+  assert.deepEqual(result.body.lessons, level.body.lessons);
+  assert.equal(request('/api/search?lesson=0').code, 400);
+  assert.equal(request('/api/search?chapter=A1&lesson=9999').code, 400);
+});
+test('lesson pagination retains order and does not omit results', () => {
+  const level = request('/api/search?chapter=C1.2');
+  const legacy = level.body.lessons.find(l => l.name === 'ข้อมูลนำเข้า (ไม่ระบุบท)');
+  assert.ok(legacy);
+  const first = request('/api/search?chapter=C1.2&lesson=' + legacy.id);
+  const second = request('/api/search?chapter=C1.2&lesson=' + legacy.id + '&page=2');
+  const expected = visibleItems.filter(i => i.chapter === 'C1.2' && String(i.exerciseIndex) === legacy.id);
+  assert.equal(first.body.total, expected.length);
+  assert.equal(first.body.hasMore, true);
+  assert.deepEqual([...first.body.items, ...second.body.items].map(i => i.id), expected.slice(0,40).map(i => i.id));
 });
