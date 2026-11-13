@@ -1,0 +1,7 @@
+{
+  "name": "speexx-solve",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "start": "node server/dev.js", "test": "node --test" },
+  "engines": { "node": ">=18" }
+}
