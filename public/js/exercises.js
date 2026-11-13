@@ -27,6 +27,14 @@
     const raw = Array.isArray(item.answers) ? item.answers : [];
     const picks = raw.map(group => Array.isArray(group) ? group : [group]);
     if (!picks.length || picks.some(group => !group.length || group.some(n => !Number.isInteger(n) || n < 0))) return null;
+    // Tab-separated rows explicitly contain a statement followed by its options.
+    const lines = item.body.split('\n').filter(line => line.trim());
+    if (item.answerType === 'single-choice' && lines.length === picks.length) {
+      const rows = lines.map(line => line.split('\t').map(value => value.trim()).filter(Boolean));
+      if (rows.every((row, i) => row.length >= 3 && picks[i].length === 1 && picks[i][0] < row.length - 1)) {
+        return rows.map((row, i) => ({ question: row[0], options: row.slice(1), selected: picks[i] }));
+      }
+    }
     // True/False records have each statement immediately followed by True\nFalse.
     if (item.answerType === 'single-choice' && picks.every(group => group.length === 1 && group[0] <= 1)) {
       const pattern = /true\s*\n\s*false/ig;
@@ -53,5 +61,10 @@
     if (groups.length !== picks.length || groups.some((g, i) => !g.options.length || picks[i].some(n => n >= g.options.length))) return null;
     return groups.map((g, i) => ({ ...g, selected: picks[i] }));
   }
-  return { descriptions, describe, selectionGroups };
+  // Keep empty positions so answer numbers and clipboard buttons do not shift.
+  function orderedValues(item) {
+    if (!Array.isArray(item.answers)) return [];
+    return item.answers.map(value => typeof value === 'string' ? value : value == null ? '' : String(value));
+  }
+  return { descriptions, describe, selectionGroups, orderedValues };
 });
