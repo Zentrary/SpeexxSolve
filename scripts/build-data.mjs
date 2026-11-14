@@ -1,13 +1,3 @@
-/**
- * Builds server/data.json from the JSON files in "solve data".
- *
- * Usage:  node scripts/build-data.mjs
- *
- * - Normalizes every answered page into a flat searchable record.
- * - Downloads picture-choice images into public/assets/images (once).
- * - Writes the normalized dataset for the server-side search API.
- */
-
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -92,7 +82,6 @@ async function downloadImage(src, name) {
     const stat = await fs.stat(target);
     if (stat.size > 500) return `assets/images/${name}`;
   } catch {
-    /* not cached yet */
   }
   try {
     const res = await fetch(src, { redirect: "follow" });
@@ -227,8 +216,6 @@ async function main() {
     chapters.push(chapter);
     console.log(`${chapterName}: ${chapter.exerciseCount} exercises, ${chapter.pageCount} answered pages`);
   }
-
-  // Order chapters the way the courses progress.
   chapters.sort((a, b) => {
     const ai = CHAPTER_ORDER.indexOf(a.id);
     const bi = CHAPTER_ORDER.indexOf(b.id);
@@ -241,8 +228,6 @@ async function main() {
     if (a.exerciseIndex !== b.exerciseIndex) return a.exerciseIndex - b.exerciseIndex;
     return a.pageIndex - b.pageIndex;
   });
-
-  // Download images.
   const jobs = [...imageJobs.entries()];
   console.log(`\nDownloading ${jobs.length} images to assets/images ...`);
   const localPaths = await mapLimit(jobs, 8, ([src, name]) => downloadImage(src, name));

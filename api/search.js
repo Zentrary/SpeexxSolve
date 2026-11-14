@@ -50,8 +50,6 @@ module.exports = function handler(req, res) {
     (!images || item.images?.length) && tokens.every(token => haystack.includes(token)));
   const page = Number(pageString);
   const start = (page - 1) * PAGE_SIZE;
-  // Only return fields used by the UI; never send timestamps, raw question,
-  // search-only answerText or source metadata. Answers remain visible to users.
   const toPublicItem = ({ id, chapter, exercise, page, prompt, title, body, answerType, answers, images }) => ({
     id, chapter, exercise, page, prompt, title, body, answerType, answers,
     images: (images || []).map(({src, itemIdx}) => ({src, itemIdx}))

@@ -1,4 +1,3 @@
-// Minimal local server: only files in public/ are accessible.
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
