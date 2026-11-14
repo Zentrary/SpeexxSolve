@@ -1,10 +1,4 @@
 'use strict';
-
-// Legacy imports are sometimes truncated copies of pages already present in a
-// named lesson. Only suppress a copy when the match is unique and the prompt,
-// title, answer type, answers and a substantial body prefix all agree. Preserve
-// the named lesson's identity and use the more complete body. Never deduplicate
-// across levels or merely by title/answer; similar exercises can be distinct.
 function deduplicateLegacy(items) {
   const normalize = value => String(value || '').replace(/\s+/g, ' ').trim();
   const identity = item => JSON.stringify([item.chapter, item.title, item.prompt, item.answerType, item.answers]);

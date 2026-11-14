@@ -6,7 +6,6 @@
 @media(max-width:650px){.container{width:calc(100% - 32px)}.nav{min-height:64px;gap:12px}.brand{font-size:18px}.nav nav{gap:16px;font-size:13px}.home{padding-top:52px;padding-bottom:55px}.intro h1{font-size:34px}.home-section{margin-top:55px}.section-heading,.credit{display:block}.section-heading>p{margin-top:10px}.feature-list{grid-template-columns:1fr;gap:22px;margin-top:25px}.credit-person{min-width:0;margin-top:22px}.footer-inner{padding:18px 0;display:flex;flex-direction:column;align-items:flex-start;gap:4px}.vault{padding-top:32px}.vault-heading h1{font-size:28px}.search-panel,.card{padding:16px}.filters{gap:10px}.filters label:not(.check){min-width:calc(50% - 10px)}.results-heading{align-items:flex-start;flex-direction:column;gap:0}.card h3{font-size:16px}.answer-panel{padding:12px}.copy-row{gap:7px}.copy-one{padding:5px 8px}.img-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:330px){.nav nav{gap:9px}.brand{font-size:16px}.nav nav{font-size:12px}.filters label:not(.check){min-width:100%}.intro h1{font-size:29px}}
 
-/* Dark neutral theme and restrained motion */
 :root{color:#eeeeed;background:#101112;color-scheme:dark}
 body{background:#101112;color:#eeeeed}
 a{color:inherit}

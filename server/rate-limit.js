@@ -1,7 +1,4 @@
 'use strict';
-
-// A local, best-effort limiter only. Serverless instances do not share this
-// state; enforce a distributed per-IP rule at the Vercel WAF for production.
 function createLimiter({ limit = 30, windowMs = 60_000, maxKeys = 10_000, now = Date.now } = {}) {
   const buckets = new Map();
   return function check(key) {
@@ -20,7 +17,6 @@ function createLimiter({ limit = 30, windowMs = 60_000, maxKeys = 10_000, now = 
   };
 }
 function clientKey(req) {
-  // Vercel sets this header; elsewhere never trust client-supplied headers.
   if (process.env.VERCEL === '1') return String(req.headers?.['x-vercel-forwarded-for'] || 'unknown').split(',')[0].trim() || 'unknown';
   return req.socket?.remoteAddress || 'unknown';
 }

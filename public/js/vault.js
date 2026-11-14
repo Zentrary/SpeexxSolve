@@ -203,8 +203,6 @@
 
     return `<div class="answer-box">${autoAnswerBlock(flat, matcher)}</div>`;
   }
-
-  // Only actual text-entry tasks should expose clipboard controls.
   function copyValues(item) {
     return Exercises.describe(item).copyable ? Exercises.orderedValues(item) : [];
   }
@@ -281,7 +279,6 @@
       if (error.name === 'AbortError' || number !== requestNumber) return;
       status.textContent = error.message === 'rate-limited' ? 'ค้นหาบ่อยเกินไป กรุณารอสักครู่แล้วลองอีกครั้ง' : 'โหลดข้อมูลไม่สำเร็จ กรุณาลองอีกครั้ง';
       more.textContent = 'ลองอีกครั้ง'; more.hidden = false;
-      // Retry the same page on failure, rather than skipping it.
       more.dataset.retry = '1';
     }
   }
